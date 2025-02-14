@@ -1,34 +1,149 @@
 :root{
     /* Color styles */
 --text--title: rgba(35, 35, 38, 1);
---text--서브-title: rgba(52, 52, 52, 1);
---text--본문_다크: rgba(58, 58, 58, 1);
---text--본문_라이트: rgba(131, 131, 131, 1);
---text--화이트: rgba(255, 255, 255, 1);
---mainColor--레이즌-블랙: rgba(35, 35, 38, 1);
---mainColor--브라운-베이지: rgba(205, 165, 128, 1);
---mainColor--라이트-그레이: rgba(245, 245, 245, 1);
+--text--sub-title: rgba(52, 52, 52, 1);
+--text--dark: rgba(58, 58, 58, 1);
+--text--light: rgba(131, 131, 131, 1);
+--text--white: rgba(255, 255, 255, 1);
+--mainColor--raisin-black: rgba(35, 35, 38, 1);
+--mainColor--brown-beige: rgba(205, 165, 128, 1);
+--mainColor--light-gray: rgba(245, 245, 245, 1);
 
 /* Text-size styles */
 
---mainpc--헤더---s_대메뉴: 20px;
---mainpc--헤더---g_중메뉴: 18px;
---mainpc--컨텐츠--한글---g_최종가격: 22px;
---mainpc--컨텐츠--한글---g_할인전가격: 16px;
---mainpc--컨텐츠--한글---s_title: 34px;
---mainpc--컨텐츠--한글---s_상품명: 20px;
---mainpc--컨텐츠--한글---g_상품설명: 16px;
---mainpc--컨텐츠--한글---g_상품설명2줄: 16px;
---mainpc--컨텐츠--한글---g_이벤트-기간: 22px;
---mainpc--컨텐츠--한글---g_비주얼title: 46px;
---mainpc--컨텐츠--한글---g_본문: 22px;
---mainpc--컨텐츠--영문---g_서브title: 16px;
---mainpc--푸터--회사정보01: 18px;
---mainpc--푸터--회사정보02: 18px;
---mainpc--푸터--상세설명: 14px;
---mainpc--푸터--메뉴01: 20px;
---mainpc--푸터--메뉴02: 20px;
---mainpc--버튼--숫자: 18px;
---mainpc--버튼--전체보기자세히-보기: 18px;
---mainpc--버튼--바로가기팔로우: 16px;
+--mainpc--header---s_대메뉴: 20px;
+--mainpc--header---g_중메뉴: 18px;
+--mainpc--content--kr---g_최종가격: 22px;
+--mainpc--content--kr---g_할인전가격: 16px;
+--mainpc--content--kr---s_title: 34px;
+--mainpc--content--kr---s_상품명: 20px;
+--mainpc--content--kr---g_상품설명: 16px;
+--mainpc--content--kr---g_상품설명2줄: 16px;
+--mainpc--content--kr---g_이벤트-기간: 22px;
+--mainpc--content--kr---g_비주얼title: 46px;
+--mainpc--content--kr---g_본문: 22px;
+--mainpc--content--en---g_subtitle: 16px;
+--mainpc--footer--회사정보01: 18px;
+--mainpc--footer--회사정보02: 18px;
+--mainpc--footer--상세설명: 14px;
+--mainpc--footer--메뉴01: 20px;
+--mainpc--footer--메뉴02: 20px;
+--mainpc--button--숫자: 18px;
+--mainpc--button--전체보기자세히-보기: 18px;
+--mainpc--button--바로가기팔로우: 16px;
+}
+
+/*공통 클래스*/
+
+.container{
+    width: 1920px;
+}
+
+.inner{
+    max-width:1780px;
+    margin: 0 auto;
+}
+.rel{
+    position: relative;
+}
+.abs{
+position: absolute;
+}
+.d-flex{
+display: flex;
+}
+.i-flex{
+    display: inline-flex;
+}
+.jcc{
+justify-content: center;
+}
+.jcb{
+justify-content: space-between;
+}
+.aic{ 
+align-items: center;
+}
+.aie{
+align-items: flex-end;
+}
+
+
+body{
+    h1, h2, h3, h4, h5, h6, p{
+        margin: 0;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+#hd{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 22px 0;
+   
+   .inner{
+ 
+   }
+}
+
+#menu{
+     ul{
+        gap: 4.375rem;
+            li {
+                a{
+                color: var(--mainColor--brown-beige);
+                text-decoration-line: none;
+                font-family: MaruBuri;
+                font-size: 1.25rem;
+                }
+            }
+    }
+}
+
+
+
+
+#hd_icon{   
+    ul{
+        gap: 1.875rem;
+    }
+    
+}
+
+#v_slide{
+    .mainslide{
+        height: 100vh;
+        &.bg0{
+            background-image: url("../images/img/main_visual01.jpg");
+
+        p{
+            color: var(---, var(--Light-Gray, #F5F5F5));
+            font-family: "Noto Sans KR";
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: -0.04125rem;
+        }
+        h1{
+            color: var(---, var(--Light-Gray, #F5F5F5));
+            font-family: "Noto Sans KR";
+            font-size: 2.875rem;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: -0.08625rem;
+            span{
+                color: var(---, var(--Brown-Bage, #CDA580));
+            }
+        }
+        button{
+
+        }
+    }
+    }
 }
