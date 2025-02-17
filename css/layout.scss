@@ -1,71 +1,42 @@
-:root{
-    /* Color styles */
---text--title: rgba(35, 35, 38, 1);
---text--sub-title: rgba(52, 52, 52, 1);
---text--dark: rgba(58, 58, 58, 1);
---text--light: rgba(131, 131, 131, 1);
---text--white: rgba(255, 255, 255, 1);
---mainColor--raisin-black: rgba(35, 35, 38, 1);
---mainColor--brown-beige: rgba(205, 165, 128, 1);
---mainColor--light-gray: rgba(245, 245, 245, 1);
-
-/* Text-size styles */
-
---mainpc--header---s_대메뉴: 20px;
---mainpc--header---g_중메뉴: 18px;
---mainpc--content--kr---g_최종가격: 22px;
---mainpc--content--kr---g_할인전가격: 16px;
---mainpc--content--kr---s_title: 34px;
---mainpc--content--kr---s_상품명: 20px;
---mainpc--content--kr---g_상품설명: 16px;
---mainpc--content--kr---g_상품설명2줄: 16px;
---mainpc--content--kr---g_이벤트-기간: 22px;
---mainpc--content--kr---g_비주얼title: 46px;
---mainpc--content--kr---g_본문: 22px;
---mainpc--content--en---g_subtitle: 16px;
---mainpc--footer--회사정보01: 18px;
---mainpc--footer--회사정보02: 18px;
---mainpc--footer--상세설명: 14px;
---mainpc--footer--메뉴01: 20px;
---mainpc--footer--메뉴02: 20px;
---mainpc--button--숫자: 18px;
---mainpc--button--전체보기자세히-보기: 18px;
---mainpc--button--바로가기팔로우: 16px;
+#hd{
+    padding-top: 22px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    h1{
+        width: 0;
+    }
+    #allMenu{
+        width:1.5rem;
+        height: 1.5rem;
+        background: url("/images/icon/button/ham.svg") no-repeat center;
+        &.on {
+            background-image: url("/images/icon/button/close.svg" )no-repeat center;
+            @media (min-width:991px)
+                {
+                    display: none;
+                } 
+    }
+}
+    .gnb{
+        gap: 4.375rem;
+    }
+    .util{
+        gap: 1.875rem;
+        width: 0;
+    }
 }
 
-/*공통 클래스*/
+#c02{
+    li{
+        width: 100%;
+    }
 
-.container{
-    width: 1920px;
 }
 
-.inner{
-    max-width:1780px;
-    margin: 0 auto;
-}
-.rel{
-    position: relative;
-}
-.abs{
-position: absolute;
-}
-.d-flex{
-display: flex;
-}
-.i-flex{
-    display: inline-flex;
-}
-.jcc{
-justify-content: center;
-}
-.jcb{
-justify-content: space-between;
-}
-.aic{ 
-align-items: center;
-}
-.aie{
-align-items: flex-end;
-}
+
 
 
