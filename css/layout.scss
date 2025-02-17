@@ -1,6 +1,5 @@
 #hd{
-    padding-top: 22px;
-    width: 100%;
+    padding: 22px;
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -23,6 +22,10 @@
 }
     .gnb{
         gap: 4.375rem;
+        a {
+            color: var(---, var(--Brown-Bage, #CDA580));
+            
+        }
     }
     .util{
         gap: 1.875rem;
@@ -30,11 +33,28 @@
     }
 }
 
-#c02{
-    li{
-        width: 100%;
+#c01{
+    width: 120rem;
+    height: auto;
+    ul{
+        gap: 3.125rem;
     }
+    ul li{
+        text-align: center;
+        
+    }
+}
 
+#c02{
+
+    .box01{
+        width: 100%;
+        background-image: url(/images/img/c02_01.jpg);
+    }
+    .box02{
+        width: 100%;
+        background-image: url(/images/img/c02_02.jpg);
+    }
 }
 
 

@@ -1,5 +1,5 @@
 #hd {
-  padding-top: 22px;
+  padding: 22px;
   width: 100%;
   z-index: 1000;
   position: fixed;
@@ -24,9 +24,34 @@
   }
 }
 #hd .gnb {
+  width: 100%;
   gap: 4.375rem;
+}
+#hd .gnb a {
+  color: var(---, var(--Brown-Bage, #CDA580));
 }
 #hd .util {
   gap: 1.875rem;
   width: 0;
+}
+
+#c01 {
+  width: 120rem;
+  height: auto;
+}
+#c01 ul {
+  flex-direction: column;
+  gap: 3.125rem;
+}
+#c01 ul li {
+  text-align: center;
+}
+
+#c02 .box01 {
+  width: 100%;
+  background-image: url(/images/img/c02_01.jpg) no-repeat;
+}
+#c02 .box02 {
+  width: 100%;
+  background-image: url(/images/img/c02_02.jpg);
 }

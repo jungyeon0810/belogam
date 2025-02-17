@@ -35,6 +35,9 @@
 
 /*공통 클래스*/
 
+a{
+text-decoration: none;
+}
 .container{
     width: 1920px;
 }
@@ -55,6 +58,9 @@ display: flex;
 .i-flex{
     display: inline-flex;
 }
+.f-d{
+    flex-direction: column;
+}
 .jcc{
 justify-content: center;
 }
@@ -69,4 +75,90 @@ align-items: center;
 }
 .aie{
 align-items: flex-end;
+}
+.p170{
+    padding: 170px 0;
+}
+
+.l-menu{
+color: var(---, var(--Brown-Bage, #CDA580));
+text-align: center;
+/* 메인(한글)pc/헤더/S_대메뉴 */
+font-family: MaruBuri;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.25rem; /* 100% */
+letter-spacing: -0.0375rem;
+}
+
+.title{
+ color: var(---, var(--Title-Text, #232326));
+text-align: center;
+/* 메인(한글)pc/컨텐츠/한글/S_타이틀 */
+font-family: MaruBuri;
+font-size: 2.125rem;
+font-style: normal;
+font-weight: 600;
+line-height: 2.125rem; /* 100% */
+letter-spacing: -0.06375rem;
+}
+.w-title{
+    color: var(---, var(--Title-Text, #f5f5f5));
+   text-align: center;
+   /* 메인(한글)pc/컨텐츠/한글/S_타이틀 */
+   font-family: MaruBuri;
+   font-size: 2.125rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 2.125rem; /* 100% */
+   letter-spacing: -0.06375rem;
+   }
+
+.s-title{
+color: var(---, var(--Brown-Bage, #CDA580));
+text-align: center;
+/* 메인(한글)pc/컨텐츠/영문/G_서브타이틀 */
+font-family: "Noto Sans KR";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1rem; /* 100% */
+letter-spacing: -0.03rem;
+}
+
+.title-2{
+    color: var(---_, var(--Dark-Text, #3A3A3A));
+    text-align: center;
+    /* 메인(한글)pc/컨텐츠/한글/G_본문 */
+    font-family: "Noto Sans KR";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 145.455% */
+    letter-spacing: -0.04125rem;
+}
+
+.text01-2d{
+    color: var(---_, var(--Dark-Text, #3A3A3A));
+    text-align: center;
+    /* 메인(한글)pc/컨텐츠/한글/G_상품설명2줄 */
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 1.375rem; /* 137.5% */
+    letter-spacing: -0.03rem;
+}
+
+.text01-2w{
+    color: var(---, var(--White-Text, #f5f5f5));
+    text-align: center;
+    /* 메인(한글)pc/컨텐츠/한글/G_상품설명2줄 */
+    font-family: "Noto Sans KR";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 1.375rem; /* 137.5% */
+    letter-spacing: -0.03rem;
 }
