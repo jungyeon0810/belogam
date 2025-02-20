@@ -11,26 +11,26 @@
 
 /* Text-size styles */
 
---mainpc--header---s_대메뉴: 20px;
---mainpc--header---g_중메뉴: 18px;
---mainpc--content--kr---g_최종가격: 22px;
---mainpc--content--kr---g_할인전가격: 16px;
+--mainpc--header---s_L-menu: 20px;
+--mainpc--header---g_M-menu: 18px;
+--mainpc--content--kr---g_tag01: 22px;
+--mainpc--content--kr---g_tag02: 16px;
 --mainpc--content--kr---s_title: 34px;
---mainpc--content--kr---s_상품명: 20px;
---mainpc--content--kr---g_상품설명: 16px;
---mainpc--content--kr---g_상품설명2줄: 16px;
---mainpc--content--kr---g_이벤트-기간: 22px;
---mainpc--content--kr---g_비주얼title: 46px;
---mainpc--content--kr---g_본문: 22px;
+--mainpc--content--kr---s_pd-name: 20px;
+--mainpc--content--kr---g_pd-text: 16px;
+--mainpc--content--kr---g_pd-text2l: 16px;
+--mainpc--content--kr---g_event-기간: 22px;
+--mainpc--content--kr---g_visual-title: 46px;
+--mainpc--content--kr---g_text01: 22px;
 --mainpc--content--en---g_subtitle: 16px;
---mainpc--footer--회사정보01: 18px;
---mainpc--footer--회사정보02: 18px;
---mainpc--footer--상세설명: 14px;
---mainpc--footer--메뉴01: 20px;
---mainpc--footer--메뉴02: 20px;
---mainpc--button--숫자: 18px;
---mainpc--button--전체보기자세히-보기: 18px;
---mainpc--button--바로가기팔로우: 16px;
+--mainpc--footer--company-01: 18px;
+--mainpc--footer--company02: 18px;
+--mainpc--footer--text02: 14px;
+--mainpc--footer--menu01: 20px;
+--mainpc--footer--menu02: 20px;
+--mainpc--button--number: 18px;
+--mainpc--button--view-more: 18px;
+--mainpc--button--go-follow: 16px;
 }
 
 /*공통 클래스*/
@@ -76,14 +76,16 @@ align-items: center;
 .aie{
 align-items: flex-end;
 }
+.ais{
+    align-items: flex-start;
+}
 .p170{
     padding: 170px 0;
 }
 
 .l-menu{
-color: var(---, var(--Brown-Bage, #CDA580));
 text-align: center;
-/* 메인(한글)pc/헤더/S_대메뉴 */
+/* 메인(한글)pc/헤더/S_L-menu */
 font-family: MaruBuri;
 font-size: 1.25rem;
 font-style: normal;
@@ -93,7 +95,6 @@ letter-spacing: -0.0375rem;
 }
 
 .title{
- color: var(---, var(--Title-Text, #232326));
 text-align: center;
 /* 메인(한글)pc/컨텐츠/한글/S_타이틀 */
 font-family: MaruBuri;
@@ -103,20 +104,8 @@ font-weight: 600;
 line-height: 2.125rem; /* 100% */
 letter-spacing: -0.06375rem;
 }
-.w-title{
-    color: var(---, var(--Title-Text, #f5f5f5));
-   text-align: center;
-   /* 메인(한글)pc/컨텐츠/한글/S_타이틀 */
-   font-family: MaruBuri;
-   font-size: 2.125rem;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 2.125rem; /* 100% */
-   letter-spacing: -0.06375rem;
-   }
 
 .s-title{
-color: var(---, var(--Brown-Bage, #CDA580));
 text-align: center;
 /* 메인(한글)pc/컨텐츠/영문/G_서브타이틀 */
 font-family: "Noto Sans KR";
@@ -127,8 +116,7 @@ line-height: 1rem; /* 100% */
 letter-spacing: -0.03rem;
 }
 
-.title-2{
-    color: var(---_, var(--Dark-Text, #3A3A3A));
+.text01{
     text-align: center;
     /* 메인(한글)pc/컨텐츠/한글/G_본문 */
     font-family: "Noto Sans KR";
@@ -139,8 +127,7 @@ letter-spacing: -0.03rem;
     letter-spacing: -0.04125rem;
 }
 
-.text01-2d{
-    color: var(---_, var(--Dark-Text, #3A3A3A));
+.text02-2{
     text-align: center;
     /* 메인(한글)pc/컨텐츠/한글/G_상품설명2줄 */
     font-family: "Noto Sans KR";
@@ -151,14 +138,35 @@ letter-spacing: -0.03rem;
     letter-spacing: -0.03rem;
 }
 
-.text01-2w{
-    color: var(---, var(--White-Text, #f5f5f5));
-    text-align: center;
-    /* 메인(한글)pc/컨텐츠/한글/G_상품설명2줄 */
-    font-family: "Noto Sans KR";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 350;
-    line-height: 1.375rem; /* 137.5% */
-    letter-spacing: -0.03rem;
+.v-text{
+color: var(---, var(--Light-Gray, #F5F5F5));
+/* 메인(한글)pc/컨텐츠/한글/G_비주얼타이틀 */
+font-family: "Noto Sans KR";
+font-size: 2.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 3.625rem; /* 126.087% */
+letter-spacing: -0.08625rem;
+}
+
+.v-span{
+color: var(---, var(--Brown-Bage, #CDA580));
+/* 메인(한글)pc/컨텐츠/한글/G_비주얼타이틀 */
+font-family: "Noto Sans KR";
+font-size: 2.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 3.625rem;
+letter-spacing: -0.08625rem;
+}
+.btn01{
+color: var(---, var(--Light-Gray, #F5F5F5));
+text-align: center;
+/* 메인(한글)pc/버튼/바로가기,팔로우 */
+font-family: "Noto Sans KR";
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1rem; /* 100% */
+letter-spacing: -0.03rem;
 }
