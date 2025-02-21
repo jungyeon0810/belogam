@@ -30,8 +30,8 @@
         padding-left: 200px;
 
         .text01 {
-            padding-bottom: 1.875rem;
             color: var(---, var(--Light-Gray, #F5F5F5));
+            padding-bottom: 1.875rem;
             margin: 0;
         }
 
@@ -40,58 +40,118 @@
             padding-bottom: 3.125rem;
         }
 
-        .btn01 {
-            background: none;
-            /* 배경 제거 */
-            border: 1px solid var(--Light-Gray, #F5F5F5);
-            box-shadow: none;
-            /* 그림자 제거 */
-            text-decoration: none;
-            /* 밑줄 제거 */
-            padding: 0.9375rem 3.125rem;
-            gap: 0.625rem;
+        .s-btn {
+            padding-top: 4.375rem;
         }
 
-        .btn02 {
-            background: none;
-            /* 배경 제거 */
-            border:none;
-            box-shadow: none;
-            /* 그림자 제거 */
-            text-decoration: none;
-            /* 밑줄 제거 */
-            margin-top: 4.375rem;
-            gap: 2.1875rem;
-            color: var(---, var(--Light-Gray, #F5F5F5));
-        }
     }
 }
 
-#c01{
-    ul{
+#c01 {
+    ul {
         flex-direction: column;
         gap: 3.125rem;
-        li{
+
+        li {
             text-align: center;
         }
-}
-}
 
-#c02{
-
-.left{
-    p{
-        color: var(---, var(--Brown-Bage, #CDA580));
-    }
-    h1{
-        color: var(---, var(--Sub-Title-Text, #343434));
-    }
-    h2{
-        color: var(---_, var(--Dark-Text, #3A3A3A));
-        
     }
 }
-.right{
+
+#c02 {
+    .d-bg {
+        width: 100%;
+    }
+
+    .left {
+        height: 43.75rem;
+        background-image: url(/images/img/c02_01.jpg);
+        flex-grow: 1;
+
+        .l-text {
+            flex-direction: column;
+            gap: 1.5625rem;
+
+            p {
+                color: var(---, var(--Brown-Bage, #CDA580));
+            }
+
+            h1 {
+                color: var(---, var(--Sub-Title-Text, #343434));
+            }
+
+            h2 {
+                color: var(---_, var(--Dark-Text, #3A3A3A));
+            }
+        }
+    }
+
+    .right {
+        height: 43.75rem;
+        background-image: url(/images/img/c02_02.jpg);
+        flex-grow: 1;
+
+        .r-text {
+
+            flex-direction: column;
+            gap: 1.5625rem;
+
+            p {
+                color: var(---, var(--Brown-Bage, #CDA580));
+            }
+
+            h1 {
+                color: var(---, var(--White-Text, #FFF));
+            }
+
+            h2 {
+                color: var(---, var(--White-Text, #FFF));
+            }
+        }
+    }
 
 }
+
+#c03{
+    .pd{
+        position: relative;
+        gap: 1.25rem;
+        .jcc{
+            .box01{
+            color: var(---, var(--Brown-Bage, #CDA580));
+            flex-direction: column;
+            padding-bottom: 1.25rem;
+        }
+        h1{
+            padding-bottom:4.375rem;
+        }
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 2.5625rem;
+        }
+        .event{
+            .d-flex{
+            gap: 1.3125rem;
+        }
+            .pd01,
+            .pd02,
+            .pd03{
+                    img{
+                        padding-bottom: 1.5625rem;
+                    }
+                    .text{
+                        p{
+                            padding-bottom: 1.0625rem;
+                            margin: 0;
+                        }
+                    }
+        }
+
+
+    }
+    }
+
 }
