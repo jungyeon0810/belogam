@@ -1,28 +1,36 @@
-#hd {
+ul, li, h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+
+#hd{
+    padding: 0 70px;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 22px 0;
     z-index: 1000;
-    margin: 0 70px;
+    height: 5.375rem;
+    .gnb{
 
-    .gnb {
-        gap: 4.375rem;
-
-        a {
-            color: var(---, var(--Brown-Bage, #CDA580));
+        ul {
+        gap: 4.4375rem;
+        a{
+            color: var(--Brown-Bage, #CDA580);
         }
-
-    }
-
-    .util {
-        gap: 1.875rem;
     }
 }
+    .util{
+        ul{
+        gap: 1.875rem;
+        }
+    }
+        
+    }
+    
+
 
 #v_slide {
     background-image: url(/images/img/main_visual01.jpg);
+    width: 100%;
     height: 100vh;
 
     .text {
