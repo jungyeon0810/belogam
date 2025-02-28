@@ -3,20 +3,43 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+.login .ad {
+  display: block !important;
+}
+.login .ad a {
+  height: 2.5rem;
+  color: var(--Lightgray, #f5f5f5);
+  text-align: center;
+  background-color: var(--Brown-Bage, #CDA580);
+}
+.login #hd .box01 {
+  background: var(--Raisin-Black, #232326);
+}
+
 #hd {
-  padding: 0 70px;
   position: fixed;
   z-index: 1000;
   height: 5.375rem;
+  left: 0;
+  right: 0;
+  top: 0;
 }
-#hd .gnb ul {
+#hd .box01 {
+  height: 5.375rem;
+  padding: 0 70px;
+}
+#hd .box01 .gnb ul {
   gap: 4.4375rem;
 }
-#hd .gnb ul a {
+#hd .box01 .gnb ul a {
   color: var(--Brown-Bage, #CDA580);
 }
-#hd .util ul {
+#hd .box01 .util ul {
   gap: 1.875rem;
+}
+
+.login .content {
+  padding-top: 170px;
 }
 
 #v_slide {
@@ -119,4 +142,10 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 #c03 .pd .event .pd03 .text p {
   padding-bottom: 1.0625rem;
   margin: 0;
+}
+
+/*footer*/
+#ft {
+  background-color: var(--Raisin-Black, #232326);
+  height: 26.6875rem;
 }
