@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/firstlogin.css">
+</head>
+
+<body>
+<div class="container d-flex justify-content-center align-items-center vh-100" id="juhyun_firstlogin">
+    <div class="card p-4 border-0" style="max-width: 500px; width: 100%;">
+        <!-- 로그인 제목 -->
+        <h2 class="text-center mb-4 logintext">로그인</h2>
+        
+        <form action="login-action.php" method="POST">
+            <!-- 아이디 입력 -->
+            <div class="mb-3">
+                <input type="text" id="username" name="username" class="form-control" placeholder="아이디" required>
+            </div>
+
+            <!-- 비밀번호 입력 -->
+            <div class="mb-3">
+                <input type="password" id="password" name="password" class="form-control" placeholder="비밀번호" required>
+            </div>
+
+            <!-- 자동 로그인 체크박스 및 링크 -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <input type="checkbox" id="auto-login" name="auto-login" class="form-check-input">
+                    <label for="auto-login" class="form-check-label">자동 로그인</label>
+                </div>
+                <div class="jointext">
+                    <a href="signup.html">회원가입</a> | 
+                    <a href="find-id.html">아이디 찾기</a> | 
+                    <a href="find-password.html">비밀번호 찾기</a>
+                </div>
+            </div>
+
+            <!-- 로그인 버튼 -->
+            <div class="mb-3">
+                <button type="submit" class="login_btn btn-secondary w-100">로그인</a></button>
+            </div>
+
+            <!-- 소셜 로그인 버튼들 -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-warning w-100 mb-2">카카오톡 로그인</button>
+                <button class="btn btn-outline-success w-100 mb-2">네이버 로그인</button>
+                <button class="btn btn-outline-info w-100 mb-2">페이스북 로그인</button>
+                <button class="btn btn-outline-danger w-100">구글 로그인</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

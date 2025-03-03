@@ -1,0 +1,198 @@
+@charset "UTF-8";
+#juhyun_firstlogin .logintext {
+  color: var(---, var(--Sub-Title-Text, #343434));
+  text-align: center;
+  font-family: MaruBuri;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 100% */
+  letter-spacing: -1.26px;
+}
+
+#auto-login .form-check-label {
+  font-style: 16px;
+}
+
+input .form-check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.jointext a,
+.form-check-label {
+  color: var(---_, var(--Light-Text, #838383));
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  letter-spacing: -0.48px;
+  text-decoration: none;
+}
+
+.login_btn {
+  background: var(--Brown-Bage, #CDA580);
+  display: flex;
+  height: 55px;
+  padding: 15px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.signuptext {
+  color: #000;
+  text-align: center;
+  font-family: MaruBuri;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 100% */
+  letter-spacing: -1.26px;
+  margin-bottom: 46px;
+}
+
+.members .individual_btn,
+.members .businessperson_btn {
+  display: flex;
+  width: 500px;
+  height: 55px;
+  padding: 0px 170px;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--Light-Text, #838383);
+  color: var(--Dark-Text, #3A3A3A);
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: white;
+}
+.members .individual_btn:hover,
+.members .businessperson_btn:hover {
+  background-color: #CDA580;
+}
+
+.individual_btn {
+  margin-top: 70px;
+}
+
+.bnbtn {
+  margin-top: 70px;
+}
+
+.bnbtn .next_btn {
+  background-color: #CDA580;
+  border: none;
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.bnbtn .next_btn a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.bnbtn .before_btn {
+  border: none;
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 1280px;
+  height: 300px;
+}
+
+.form-control_sms {
+  width: 1280px;
+  height: 67px;
+}
+
+.agreetext {
+  color: #000;
+  text-align: center;
+  font-family: MaruBuri;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.pthreetext {
+  color: #CDA580;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pthreetext span {
+  margin: 0 8px; /* 각 단어 사이에 공간 추가 */
+}
+
+.font-weight-bold {
+  font-weight: bold; /* '약관 동의' 글자 진하게 */
+}
+
+.agreebebtn {
+  border: none;
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  width: 240px;
+  height: 55px;
+  color: white;
+  background-color: #6c757d;
+}
+
+.agreenebtn {
+  border: none;
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  width: 240px;
+  height: 55px;
+  background-color: #CDA580;
+}
+.agreenebtn a {
+  text-decoration: none;
+  color: white !important;
+}
+
+#all-agree {
+  width: 30px;
+  height: 30px;
+}
+
+.form-check-label_all {
+  color: var(---, var(--Brown-Bage, #CDA580));
+  font-family: "Noto Sans KR";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.form-check-label {
+  color: var(---, var(--Brown-Bage, #CDA580));
+  font-family: "Noto Sans KR";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#privacy-policy, #terms, #sms-agree {
+  width: 16px;
+  height: 16px;
+  gap: 5px;
+}/*# sourceMappingURL=firstlogin.css.map */
