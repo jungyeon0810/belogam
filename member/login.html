@@ -13,52 +13,52 @@ include_once("../layout/top.php");
 
         <form action="/form/register.php" method="post">
             <ul>
-                <li class=" d-flex ais">
-                    <label for="userid" class="jy-ctd jy-w132">아이디<span class="jy-cbb">*</span></label>
-                    <p class=" f-id d-flex">
+                <li class="d-flex ais jcc">
+                    <label for="userid" class="jy-ctd jy-w132 jy-tt jy-lit">아이디<span class="jy-cbb">*</span></label>
+                    <p class="f-id d-flex">
                         <input type="text" id="userid" name="userid" pattern="[a-z0-9]{4,16}" required>
                         <span class=" d-fled jy-ctl">(영문소문자/숫자, 4~16자)</span>
-                        <button type="button" onclick="checkDuplicateId()" class="d-flex jcc aic">중복 확인</button>
+                        <button type="button" onclick="checkDuplicateId()" class="btn01 d-flex jcc aic">중복 확인</button>
                     </p>
                 </li>
 
-                <li class=" d-flex ais jy-pt1">
-                    <label for="password" class="jy-ctd jy-w132">비밀번호<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="password" class="jy-ctd jy-w132 jy-tt jy-lit">비밀번호<span class="jy-cbb">*</span></label>
                     <p class=" f-id d-flex">
                         <input type="password" id="password" name="password" required>
                         <span class="jy-ctl">영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자</span>
                     </p>
                 </li>
 
-                <li class=" d-flex ais jy-pt1">
-                    <label for="confirm_password" class="jy-ctd jy-w132">비밀번호 확인<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="confirm_password" class="jy-ctd jy-w132 jy-tt jy-lit">비밀번호 확인<span class="jy-cbb">*</span></label>
                     <p class=" f-id d-flex">
                         <input type="password" id="confirm_password" required>
                         <span id="passwordError" style="color:red;"></span>
                     </p>
                 </li>
 
-                <li class=" d-flex ais jy-pt1">
-                    <label for="name" class="jy-ctd jy-w132">이름<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="name" class="jy-ctd jy-w132 jy-tt jy-lit">이름<span class="jy-cbb">*</span></label>
                     <p class="d-flex">
                         <input type="text" id="name" name="name" required>
                     </p>
                 </li>
 
-                <li class=" d-flex ais jy-pt1">
-                    <label for="address" class="jy-ctd jy-w132">주소<span class="jy-cbb">*</span></label>
-                    <p>
+                <li class="d-flex ais jy-pt1">
+                    <label for="address" class="jy-ctd jy-w132 jy-tt jy-lit">주소<span class="jy-cbb">*</span></label>
+                    <p class="lv d-flex jcc">
                         <input type="text" id="address" name="address" required>
                         <button type="button" onclick="searchAddress()">주소 검색</button>
                     </p>
                 </li>
 
-                <li class=" d-flex ais jy-pt1">
-                    <label for="address_detail" class="jy-ctd jy-w132">나머지 주소<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="address_detail" class="jy-ctd jy-w132 jy-tt jy-lit"></label>
                     <input type="text" id="address_detail" name="address_detail">
                 </li>
-                <li>
-                    <label for="phone" class="jy-ctd jy-w132">연락처<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="phone" class="jy-ctd jy-w132 jy-tt jy-lit">연락처<span class="jy-cbb">*</span></label>
                     <select id="phone_prefix" name="phone_prefix">
                         <option value="010">010</option>
                         <option value="031">031</option>
@@ -68,8 +68,8 @@ include_once("../layout/top.php");
                     <input type="text" id="phone_last" name="phone_last" pattern="\d{4}" required>
                     <button type="button">본인 인증</button>
                 </li>
-                <li>
-                    <label for="email" class="jy-ctd jy-w132">이메일<span class="jy-cbb">*</span></label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="email" class="jy-ctd jy-w132 jy-tt jy-lit">이메일<span class="jy-cbb">*</span></label>
                     <input type="text" id="email" name="email" required>
                     <select id="email_domain" name="email_domain">
                         <option value="naver.com">naver.com</option>
@@ -79,13 +79,13 @@ include_once("../layout/top.php");
                     </select>
                     <input type="text" id="custom_email" name="custom_email" style="display:none;">
                 </li>
-                <li>
-                    <label>성별</label>
+                <li class="d-flex ais jy-pt1">
+                    <label class="jy-tt jy-lit">성별</label>
                     <input type="radio" id="male" name="gender" value="남성"> 남성
                     <input type="radio" id="female" name="gender" value="여성"> 여성
                 </li>
-                <li>
-                    <label for="birthdate">생년월일</label>
+                <li class="d-flex ais jy-pt1">
+                    <label for="birthdate" class="jy-tt jy-lit">생년월일</label>
                     <input type="date" id="birthdate" name="birthdate" required>
                     <input type="date" id="birthdate" name="birthdate" required>
                     <input type="date" id="birthdate" name="birthdate" required>
@@ -93,7 +93,7 @@ include_once("../layout/top.php");
                     <input type="radio" id="lunar" name="calendar" value="음력"> 음력
                 </li>
             </ul>
-            <button type="submit">가입하기</button>
+            <button type="submit" class="l-btn d-flex jcc">가입하기</button>
         </form>
     </div>
 </section>
