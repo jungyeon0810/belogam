@@ -1,19 +1,16 @@
-ul, li, h1, h2, h3, h4, h5, h6, p {
+@charset "UTF-8";
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding: 0;
   margin: 0;
-}
-
-.login .ad {
-  display: block !important;
-}
-.login .ad a {
-  height: 2.5rem;
-  color: var(--Lightgray, #f5f5f5);
-  text-align: center;
-  background-color: var(--Brown-Bage, #CDA580);
-}
-.login #hd .box01 {
-  background: var(--Raisin-Black, #232326);
+  
 }
 
 #hd {
@@ -38,10 +35,27 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
   gap: 1.875rem;
 }
 
-.login .content {
-  padding-top: 170px;
+/* 로그인 페이지*/
+.login #hd {
+  background-color: var(--Raisin-Black, #232326);
+}
+.login .l-box {
+  padding-bottom: 70px;
+  text-align: center;
+  font-family: MaruBuri;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.625rem;
+  /* 100% */
+  letter-spacing: -0.07875rem;
+}
+.login .f-id {
+  flex-direction: column;
+  gap: 0.625rem;
 }
 
+/* 로그인 페이지 끝*/
 #v_slide {
   background-image: url(/images/img/main_visual01.jpg);
   width: 100%;
