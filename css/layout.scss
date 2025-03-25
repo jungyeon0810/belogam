@@ -214,13 +214,12 @@ p {
 #c03 {
     .pd {
         position: relative;
-        gap: 1.25rem;
 
         .jcc {
             .box01 {
                 color: var(---, var(--Brown-Bage, #CDA580));
                 flex-direction: column;
-                padding-bottom: 1.25rem;
+                gap: 1.25rem;
             }
 
             h1 {
@@ -231,7 +230,7 @@ p {
         button {
             position: absolute;
             right: 0;
-            top: 2.5625rem;
+            bottom: 0rem;
         }
 
         .event {
@@ -258,6 +257,11 @@ p {
         }
     }
 
+}
+
+#c04{
+    background: #FEFAF5;
+    padding: 7.5rem 0rem;
 }
 
 

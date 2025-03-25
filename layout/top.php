@@ -53,7 +53,7 @@
 
         <div class="gnb d-flex aic">
             <ul class="d-flex aic l-menu">
-                <li><a href="">브랜드</a></li>
+                <li><a href="/brand">브랜드</a></li>
                 <li><a href="">메이드벨로</a></li>
                 <li><a href="">벨로케어</a></li>
                 <li><a href="">벨로배송</a></li>
@@ -65,7 +65,7 @@
             <div class="util d-flex aic">
             <ul class="d-flex aic">
                 <li><a href="/member/login.html"><img src="/images/icon/button/user.svg" alt="로그인"></a></li>
-                <li><a href=""><img src="/images/icon/button/cart.svg" alt="장바구니"></a></li>
+                <li><a href="/member/cart.html"><img src="/images/icon/button/cart.svg" alt="장바구니"></a></li>
                 <li><a href=""><img src="/images/icon/button/language.svg" alt="언어"></a></li>
             </ul>
         </div>

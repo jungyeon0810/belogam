@@ -250,6 +250,18 @@ a {
     /* 1.44px */
 }
 
+.btn02{
+display: flex;
+width: 3.875rem;
+height: 0.8125rem;
+justify-content: center;
+align-items: center;
+position: absolute;
+right: 0.0065rem;
+bottom: 0rem;
+padding: 0;
+}
+
 .v-btn {
     border: 1px solid var(--Light-Gray, #F5F5F5);
     background: none;
