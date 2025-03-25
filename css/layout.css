@@ -158,37 +158,33 @@ p {
   color: var(---, var(--White-Text, #FFF));
 }
 
-#c03 .pd .jcc .box01 {
-  color: var(---, var(--Brown-Bage, #CDA580));
+#c03 .event {
+  flex-direction: column;
+  gap: 4.375rem;
+}
+#c03 .event .ett {
+  width: 100%;
+  position: relative;
   flex-direction: column;
   gap: 1.25rem;
 }
-#c03 .pd .jcc h1 {
-  padding-bottom: 4.375rem;
+#c03 .event .ett p {
+  color: var(--Brown-Bage, #CDA580);
 }
-#c03 .pd .jcc button {
+#c03 .event .ett h1 {
+  color: var(--Sub-Title-Text, #343434);
+}
+#c03 .event .ett button {
   position: absolute;
-  right: 0;
-  bottom: 0rem;
 }
-#c03 .pd .event .d-flex {
+#c03 .e-content {
   gap: 1.3125rem;
 }
-#c03 .pd .event .pd01 img,
-#c03 .pd .event .pd02 img,
-#c03 .pd .event .pd03 img {
-  padding-bottom: 1.5625rem;
+#c03 .e-content .e01 .ei {
+  flex-direction: column;
 }
-#c03 .pd .event .pd01 .text p,
-#c03 .pd .event .pd02 .text p,
-#c03 .pd .event .pd03 .text p {
-  padding-bottom: 1.0625rem;
-  margin: 0;
-}
-
-#c04 {
-  background: #FEFAF5;
-  padding: 7.5rem 0rem;
+#c03 .e-content .e01 .ei .et {
+  flex-direction: column;
 }
 
 /*footer*/

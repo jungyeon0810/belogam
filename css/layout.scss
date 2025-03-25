@@ -67,26 +67,25 @@ p {
         letter-spacing: -0.07875rem;
     }
 
-    .f-id{
+    .f-id {
         flex-direction: column;
         gap: 0.625rem;
     }
 
-        p {
+    p {
 
-            #userid,
-            #password,
-            #confirm_password,
-            #name,
-            #address
-            {
-                padding: 0;
-                width: 31.25rem;
-                height: 3.4375rem;
-                height: 3.4375rem;
-            }
+        #userid,
+        #password,
+        #confirm_password,
+        #name,
+        #address {
+            padding: 0;
+            width: 31.25rem;
+            height: 3.4375rem;
+            height: 3.4375rem;
+        }
 
-            button.btn01{
+        button.btn01 {
             height: 3.4375rem;
             background: var(--Brown-Bage, #CDA580);
             color: var(---, var(--Light-Gray, #F5F5F5));
@@ -105,14 +104,15 @@ p {
             /* 100% */
             letter-spacing: -0.03rem;
             border: none;
-            
+
         }
-        .lv{
+
+        .lv {
             gap: 1.875rem;
-            
+
         }
     }
-    
+
 
 }
 
@@ -212,56 +212,46 @@ p {
 }
 
 #c03 {
-    .pd {
+    .event {
+        flex-direction: column;
+        gap: 4.375rem;
 
-        .jcc {
-            .box01 {
-                color: var(---, var(--Brown-Bage, #CDA580));
-                flex-direction: column;
-                gap: 1.25rem;
+        .ett {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            p {
+                color: var(--Brown-Bage, #CDA580);
             }
 
             h1 {
-                padding-bottom: 4.375rem;
+                color: var(--Sub-Title-Text, #343434);
             }
             button {
                 position: absolute;
-                right: 0;
-                bottom: 0rem;
             }
-    
         }
 
 
-        .event {
-            .d-flex {
-                gap: 1.3125rem;
+    }
+
+
+.e-content{
+    gap: 1.3125rem;
+    .e01 {
+
+        .ei{
+            flex-direction: column;
+            .et{
+                flex-direction: column;
             }
-
-            .pd01,
-            .pd02,
-            .pd03 {
-                img {
-                    padding-bottom: 1.5625rem;
-                }
-
-                .text {
-                    p {
-                        padding-bottom: 1.0625rem;
-                        margin: 0;
-                    }
-                }
-            }
-
-
         }
+
     }
 
 }
-
-#c04{
-    background: #FEFAF5;
-    padding: 7.5rem 0rem;
 }
 
 
@@ -270,5 +260,4 @@ p {
 #ft {
     background-color: var(--Raisin-Black, #232326);
     height: 26.6875rem;
-
 }
