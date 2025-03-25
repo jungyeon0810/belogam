@@ -158,9 +158,6 @@ p {
   color: var(---, var(--White-Text, #FFF));
 }
 
-#c03 .pd {
-  position: relative;
-}
 #c03 .pd .jcc .box01 {
   color: var(---, var(--Brown-Bage, #CDA580));
   flex-direction: column;
@@ -169,7 +166,7 @@ p {
 #c03 .pd .jcc h1 {
   padding-bottom: 4.375rem;
 }
-#c03 .pd button {
+#c03 .pd .jcc button {
   position: absolute;
   right: 0;
   bottom: 0rem;

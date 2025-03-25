@@ -213,7 +213,6 @@ p {
 
 #c03 {
     .pd {
-        position: relative;
 
         .jcc {
             .box01 {
@@ -225,13 +224,14 @@ p {
             h1 {
                 padding-bottom: 4.375rem;
             }
+            button {
+                position: absolute;
+                right: 0;
+                bottom: 0rem;
+            }
+    
         }
 
-        button {
-            position: absolute;
-            right: 0;
-            bottom: 0rem;
-        }
 
         .event {
             .d-flex {

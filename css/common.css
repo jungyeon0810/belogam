@@ -250,16 +250,32 @@ a {
     /* 1.44px */
 }
 
-.btn02{
-display: flex;
-width: 3.875rem;
-height: 0.8125rem;
-justify-content: center;
-align-items: center;
-position: absolute;
-right: 0.0065rem;
-bottom: 0rem;
-padding: 0;
+.btn02 {
+    background: none;
+    /* 배경 제거 */
+    border-radius: 0px;
+    box-shadow: none;
+    /* 그림자 제거 */
+    color: var(---, var(--Sub-Title-Text, #343434));
+    /* 메인(한글)pc/버튼/전체보기,자세히 보기 */
+    font-family: "Noto Sans KR";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.125rem;
+    /* 100% */
+    letter-spacing: -0.03375rem;
+    text-decoration: dashed;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 8%;
+    /* 1.44px */
+    display: flex;
+    width: 3.875rem;
+    height: 0.8125rem;
+    right: 0.0065rem;
+    bottom: 0rem;
 }
 
 .v-btn {
@@ -405,6 +421,7 @@ padding: 0;
     letter-spacing: -0.04125rem;
     vertical-align: middle;
 }
-.jy-lit{
+
+.jy-lit {
     width: 11.875rem;
 }
