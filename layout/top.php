@@ -28,6 +28,12 @@
 
     <!-- 커스터마이징 -->
     <link rel="stylesheet" href="/css/layout.min.css">
+<!-- 스와이퍼 cdn-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 <script>
@@ -40,39 +46,61 @@
 </script>
 
 <body class="<?php if(isset($page)) echo $page; ?>">
-    <header id="hd" >
+    <header id="hd" class="header">
 
         <div class='ad d-none'>
             <a href="" class="text02-1 d-flex aic jcc">1초만에 회원가입하고 5,000원 할인쿠폰 받기~!</a>
         </div>
 
         <div class="box01 d-flex jcb aic">
-        <h1>
-            <a href="/"><img src="/images/icon/logo/logo01.svg" alt="logo"></a>
-        </h1>
+            <h1>
+                <a href="/"><img src="/images/icon/logo/logo01.svg" alt="logo"></a>
+            </h1>
 
-        <div class="gnb d-flex aic">
-            <ul class="d-flex aic l-menu">
-                <li><a href="/brand">브랜드</a></li>
-                <li><a href="">메이드벨로</a></li>
-                <li><a href="">벨로케어</a></li>
-                <li><a href="">벨로배송</a></li>
-                <li><a href="">커뮤니티</a></li>
-            </ul>            
+            <div class="gnb d-flex aic">
+                <ul class="d-flex aic l-menu">
+                    <li><a href="/brand">브랜드</a></li>
+                    <li><a href="">메이드벨로</a></li>
+                    <li><a href="">벨로케어</a></li>
+                    <li><a href="">벨로배송</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="util d-flex aic">
+                    <ul class="d-flex aic">
+                        <li><a href="/member/login.html"><img src="/images/icon/button/user.svg" alt="로그인"></a></li>
+                        <li><a href="/member/cart.html"><img src="/images/icon/button/cart.svg" alt="장바구니"></a></li>
+                        <li><a href=""><img src="/images/icon/button/language.svg" alt="언어"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <div class="util d-flex aic">
-            <ul class="d-flex aic">
-                <li><a href="/member/login.html"><img src="/images/icon/button/user.svg" alt="로그인"></a></li>
-                <li><a href="/member/cart.html"><img src="/images/icon/button/cart.svg" alt="장바구니"></a></li>
-                <li><a href=""><img src="/images/icon/button/language.svg" alt="언어"></a></li>
-            </ul>
-        </div>
-
-    </div>
-        </div>
-        
     </header>
+
+    <style>
+        .header {
+            transition: background-color 0.3s ease;
+        }
+
+        .header.scrolled {
+            background-color: #232326;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+   
     <section class='content'>
         

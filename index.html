@@ -1,117 +1,161 @@
-
 <?php 
 include_once("./layout/top.php"); ?>
-
-    <section id="v_slide" class="d-flex aic">
-        <div class="text d-flex ais">
-            <!--//swiper slide 추가 후 작업-->
-            <p class="text01">BeloGem</p>
-            <h1 class="v-text">우리의 목표는 <span class="v-span">세상 모든<br>
-                    반려견</span>들의 <span class="v-span">행복</span> 입니다.</h1>
-            <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-            <button class=" s-btn d-flex aic "><img src="/images/icon/button/left.svg" alt="오른쪽">01/04<img
-                    src="/images/icon/button/right.svg" alt="왼쪽"></button>
-        </div>
-    </section>
-
-
-    <section id="c01" class="p170">
-        <div class=" d-flex jcc aic">
-            <ul class="i-flex aic">
-                <li><img src="/images/img/c01_dog.png" alt="강아지"></li>
-                <li class="title">소중함의 다른 이름 "BeloGem"</li>
-                <li class="text01">벨로젬은 세상에 모든 소중한 반려견의 삶을 보석처럼 빛내기 위해 노력합니다.<br>
-                    일반 견종은 물론. 특별한 특수 견종을 위한 맞춤 서비스를 제공합니다.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="c02" class="d-flex">
-
-        <div class="d-bg d-flex aic jcc">
-
-            <div class="left d-flex aic jcc">
-                <div class="l-text d-flex aic">
-                    <p class="s-title">Customized feed</p>
-                    <h1 class="title">일반사료 추천</h1>
-                    <h2 class="text02-2">말티즈, 푸들, 포메라니안등<br> 일반 견종을 위한 맞춤사료</h2>
-                    <button class="l-btn d-flex ">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-                </div>
-            </div>
-
-            <div class="right d-flex aic jcc">
-                <div class="r-text d-flex aic">
-                    <p class="s-title">Customized feed</p>
-                    <h1 class="title">특수사료 추천</h1>
-                    <h2 class="text02-2">하운드, 허스키, 리트리버등<br>특수 견종을 위한 맞춤 사료</h2>
-                    <button class="r-btn d-flex ">바로가기<img src="/images/icon/button/02.svg" alt="삼각형"></button>
-                </div>
+<section id="v_slide" class="swiper-container overflow-hidden position-relative">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex aic">
+            <div class="text d-flex ais">
+                <p class="text01">BeloGem</p>
+                <h1 class="v-text">우리의 목표는 <span class="v-span">세상 모든<br>
+                        반려견</span>들의 <span class="v-span">행복</span> 입니다.</h1>
+                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
             </div>
         </div>
+        <div class="swiper-slide d-flex aic">
+            <div class="text d-flex ais">
+                <p class="text01">BeloGem</p>
+                <h1 class="v-text">반려견의 <span class="v-span">건강</span>을 위한
+                    <span class="v-span">맞춤형<br> 솔루션</span>을 제공합니다.</h1>
+                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+            </div>
+        </div>
+        <div class="swiper-slide d-flex aic">
+            <div class="text d-flex ais">
+                <p class="text01">BeloGem</p>
+                <h1 class="v-text">다양한 <span class="v-span">이벤트</span>로
+                    반려견과의 <br><span class="v-span">특별한 추억</span>을 만드세요.</h1>
+                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+            </div>
+        </div>
+        <div class="swiper-slide d-flex aic">
+            <div class="text d-flex ais">
+                <p class="text01">BeloGem</p>
+                <h1 class="v-text">모든 반려견을 위한
+                    <span class="v-span">최고의<br> 서비스</span>를 제공합니다.
+                </h1>
+                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Add navigation buttons -->
+    <div class="swiper-button-next s-btn d-flex jcb"><img src="/images/icon/button/right.svg" alt="오른쪽"></div>
+    <div class="swiper-button-prev s-btn d-flex jcb"><img src="/images/icon/button/left.svg" alt="왼쪽"></div>
+    <!-- Add pagination -->
+    <div class="swiper-pagination"></div>
+</section>
 
-    </section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('#v_slide', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
 
-    <section id="c03" class="p170 inner">
+<section id="c01" class="p170">
+<div class=" d-flex jcc aic">
+    <div class="d-flex  flex-column gap-2 jcc aic">
+        <div><img src="/images/img/c01_dog.png" alt="강아지"></div>
+        <h3 class="title">소중함의 다른 이름 "BeloGem"</h3>
+        <p class="text01">벨로젬은 세상에 모든 소중한 반려견의 삶을 보석처럼 빛내기 위해 노력합니다.<br>
+            일반 견종은 물론. 특별한 특수 견종을 위한 맞춤 서비스를 제공합니다.</p>
+        </div>
+</div>
+</section>
 
-        <div class="event d-flex">
+<section id="c02" class="d-flex">
 
-            <div class="ett d-flex aic">
+    <div class="d-bg d-flex align-content-center justify-content-center">
+
+        <div class="left d-flex aic jcc">
+            <div class="l-text d-flex align-content-center justify-content-center">
+                <p class="s-title">Customized feed</p>
+                <h1 class="title">일반사료 추천</h1>
+                <h2 class="text02-2">말티즈, 푸들, 포메라니안등<br> 일반 견종을 위한 맞춤사료</h2>
+                <button class="l-btn d-flex ">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+            </div>
+        </div>
+
+        <div class="right d-flex aic jcc">
+            <div class="r-text d-flex aic">
+                <p class="s-title">Customized feed</p>
+                <h1 class="title">특수사료 추천</h1>
+                <h2 class="text02-2">하운드, 허스키, 리트리버등<br>특수 견종을 위한 맞춤 사료</h2>
+                <button class="r-btn d-flex ">바로가기<img src="/images/icon/button/02.svg" alt="삼각형"></button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="c03" class="p170 inner">
+
+    <div class="event d-flex">
+
+        <div class="ett d-flex aic">
             <p class="s-title">Belo Event</p>
             <h1 class="title">벨로 이벤트</h1>
             <button class="btn02 d-flex">전체보기</button>
-            </div>
-            
-    <div class="e-content d-flex aic jcc">
-        <div class="e01 d-flex">
+        </div>
 
-            <div class="ei d-flex">
+        <div class="e-content d-flex aic jcc">
+            <div class="e01 d-flex">
+
+                <div class="ei d-flex">
                     <img src="/images/img/c03_01.jpg" alt="이벤트01">
-                    
-                <div class="et d-flex">
-                    <p><a href="">배변훈련 이벤트</a></p>
-                    <p>반려견 배변 성공인증 시 응모가능 </p>
-                    <p>~25.02.10</p>
-                </div>
 
-            </div><!--ei-->
+                    <div class="et d-flex">
+                        <p><a href="">배변훈련 이벤트</a></p>
+                        <p>반려견 배변 성공인증 시 응모가능 </p>
+                        <p>~25.02.10</p>
+                    </div>
+
+                </div><!--ei-->
             </div><!--e01-->
 
             <div class="e01 d-flex ">
 
                 <div class="ei d-flex">
-                        <img src="/images/img/c03_01.jpg" alt="이벤트01">
-                        
+                    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+
                     <div class="et d-flex ">
                         <p><a href="">배변훈련 이벤트</a></p>
                         <p>반려견 배변 성공인증 시 응모가능 </p>
                         <p>~25.02.10</p>
                     </div>
-    
+
                 </div><!--ei-->
-                </div><!--e01-->
+            </div><!--e01-->
 
-                <div class="e01 d-flex ">
+            <div class="e01 d-flex ">
 
-                    <div class="ei d-flex">
-                            <img src="/images/img/c03_01.jpg" alt="이벤트01">
-                            
-                        <div class="et d-flex">
-                            <p><a href="">배변훈련 이벤트</a></p>
-                            <p>반려견 배변 성공인증 시 응모가능 </p>
-                            <p>~25.02.10</p>
-                        </div>
-        
-                    </div><!--ei-->
-                    </div><!--e01-->
-            
-                </div>
-        </div><!--event-->
+                <div class="ei d-flex">
+                    <img src="/images/img/c03_01.jpg" alt="이벤트01">
 
-    </section>
+                    <div class="et d-flex">
+                        <p><a href="">배변훈련 이벤트</a></p>
+                        <p>반려견 배변 성공인증 시 응모가능 </p>
+                        <p>~25.02.10</p>
+                    </div>
 
-    <!-- 부트스트랩 js -->
-    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+                </div><!--ei-->
+            </div><!--e01-->
+
+        </div>
+    </div><!--event-->
+
+</section>
+
+<!-- 부트스트랩 js -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 <?php
         include_once("./layout/bottom.php"); ?>

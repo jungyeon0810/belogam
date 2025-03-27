@@ -192,3 +192,53 @@ p {
   background-color: var(--Raisin-Black, #232326);
   height: 26.6875rem;
 }
+#ft .ft-inner {
+  padding: 70px;
+}
+#ft .ft-inner .link {
+  gap: 1.25rem;
+}
+#ft .ft-inner .link a {
+  color: var(--Brown-Bage, #CDA580);
+  font-family: "Noto Sans KR";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  /* 100% */
+  letter-spacing: -0.0375rem;
+}
+#ft .ft-inner .link a img {
+  opacity: 0.3;
+  padding-left: 1.25rem;
+}
+#ft .ft-inner .line p {
+  opacity: 0.5;
+  border-bottom: 1px solid var(--Brown-Bage, #CDA580);
+  padding-top: 3.125rem;
+}
+#ft .ft-inner .company {
+  padding-top: 3.125rem;
+}
+#ft .ft-inner .company .cn {
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+#ft .ft-inner .company .cn p {
+  color: #BDBDBD;
+  font-family: "Noto Sans KR";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.125rem; /* 100% */
+  letter-spacing: -0.03375rem;
+}
+#ft .ft-inner .company .cn p span {
+  color: var(--White-Text, #FFF);
+  font-family: "Noto Sans KR";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem; /* 100% */
+  letter-spacing: -0.03375rem;
+}

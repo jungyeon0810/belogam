@@ -229,6 +229,7 @@ p {
             h1 {
                 color: var(--Sub-Title-Text, #343434);
             }
+
             button {
                 position: absolute;
             }
@@ -238,20 +239,22 @@ p {
     }
 
 
-.e-content{
-    gap: 1.3125rem;
-    .e01 {
+    .e-content {
+        gap: 1.3125rem;
 
-        .ei{
-            flex-direction: column;
-            .et{
+        .e01 {
+
+            .ei {
                 flex-direction: column;
+
+                .et {
+                    flex-direction: column;
+                }
             }
+
         }
 
     }
-
-}
 }
 
 
@@ -260,4 +263,66 @@ p {
 #ft {
     background-color: var(--Raisin-Black, #232326);
     height: 26.6875rem;
+
+    .ft-inner {
+        padding: 70px;
+
+        .link {
+            gap: 1.25rem;
+
+            a {
+                color: var(--Brown-Bage, #CDA580);
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.25rem;
+                /* 100% */
+                letter-spacing: -0.0375rem;
+
+                img {
+                    opacity: 0.3;
+                    padding-left: 1.25rem;
+
+                    }
+                }
+        }
+
+        .line{
+                p{
+                    opacity: 0.5;
+                    border-bottom: 1px solid var(--Brown-Bage, #CDA580);
+                    padding-top: 3.125rem;
+                }
+            }
+        .company{
+            padding-top: 3.125rem;
+
+            .cn{
+                flex-direction: column;
+                gap: 0.9375rem;
+
+            p{
+                color: #BDBDBD;
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.125rem; /* 100% */
+                letter-spacing: -0.03375rem;
+
+                span{    
+                    color: var(--White-Text, #FFF);
+                    font-family: "Noto Sans KR";
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.125rem; /* 100% */
+                    letter-spacing: -0.03375rem;
+                    }
+            }
+        }
+        }
+        
+    }
 }
