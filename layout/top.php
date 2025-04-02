@@ -46,7 +46,7 @@
 </script>
 
 <body class="<?php if(isset($page)) echo $page; ?>">
-    <header id="hd" class="header">
+    <header id="hd" class="header <?php if(!defined('_INDEX_')) echo "scrolled"; ?>">
 
         <div class='ad d-none'>
             <a href="" class="text02-1 d-flex aic jcc">1초만에 회원가입하고 5,000원 할인쿠폰 받기~!</a>
@@ -90,17 +90,7 @@
         }
     </style>
 
-    <script>
-        window.addEventListener("scroll", () => {
-            const header = document.querySelector(".header");
-            if (window.scrollY > 0) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        });
-    </script>
 
    
-    <section class='content'>
+    <section class='content <?php if(!defined('_INDEX_')) echo "subpage"; ?>'>
         
