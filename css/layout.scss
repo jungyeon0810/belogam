@@ -257,6 +257,106 @@ p {
     }
 }
 
+#c04 {
+    background: #FEFAF5;
+    .inner{
+        padding: 7.5rem 0rem;
+
+    .pd {
+        flex-direction: column;
+        gap: 4.375rem;
+
+        .ptt {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            p {
+                color: var(--Brown-Bage, #CDA580);
+            }
+
+            h1 {
+                color: var(--Sub-Title-Text, #343434);
+            }
+
+            button {
+                position: absolute;
+            }
+        }
+
+
+    }
+
+
+    .p-content {
+        gap: 1.3125rem;
+
+        .p01 {
+
+            .pi {
+                flex-direction: column;
+                padding-bottom: 0.3125rem;
+
+                .pt {
+                    flex-direction: column;
+                }
+            }
+
+        }
+
+    }
+}
+}
+
+#c05{
+    .diary {
+        flex-direction: column;
+        gap: 4.375rem;
+
+        .dtt {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            p {
+                color: var(--Brown-Bage, #CDA580);
+            }
+
+            h1 {
+                color: var(--Sub-Title-Text, #343434);
+            }
+
+            button {
+                position: absolute;
+            }
+        }
+
+        .i-1{
+            position: relative;
+            padding-right: 1.25rem;
+            a{
+                position: absolute;
+                left: 1.25rem;
+                bottom: 1.25rem;
+            }
+        }
+
+        .i-2{
+            position: relative;
+            padding-right: 1.25rem;
+            a{
+                position: absolute;
+                left: 1.25rem;
+                bottom: 1.25rem;
+            }
+        }
+
+    }
+}
+
+
 
 /*footer*/
 

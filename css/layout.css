@@ -187,6 +187,80 @@ p {
   flex-direction: column;
 }
 
+#c04 {
+  background: #FEFAF5;
+}
+#c04 .inner {
+  padding: 7.5rem 0rem;
+}
+#c04 .inner .pd {
+  flex-direction: column;
+  gap: 4.375rem;
+}
+#c04 .inner .pd .ptt {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+#c04 .inner .pd .ptt p {
+  color: var(--Brown-Bage, #CDA580);
+}
+#c04 .inner .pd .ptt h1 {
+  color: var(--Sub-Title-Text, #343434);
+}
+#c04 .inner .pd .ptt button {
+  position: absolute;
+}
+#c04 .inner .p-content {
+  gap: 1.3125rem;
+}
+#c04 .inner .p-content .p01 .pi {
+  flex-direction: column;
+  padding-bottom: 0.3125rem;
+}
+#c04 .inner .p-content .p01 .pi .pt {
+  flex-direction: column;
+}
+
+#c05 .diary {
+  flex-direction: column;
+  gap: 4.375rem;
+}
+#c05 .diary .dtt {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+#c05 .diary .dtt p {
+  color: var(--Brown-Bage, #CDA580);
+}
+#c05 .diary .dtt h1 {
+  color: var(--Sub-Title-Text, #343434);
+}
+#c05 .diary .dtt button {
+  position: absolute;
+}
+#c05 .diary .i-1 {
+  position: relative;
+  padding-right: 1.25rem;
+}
+#c05 .diary .i-1 a {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+}
+#c05 .diary .i-2 {
+  position: relative;
+  padding-right: 1.25rem;
+}
+#c05 .diary .i-2 a {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+}
+
 /*footer*/
 #ft {
   background-color: var(--Raisin-Black, #232326);
