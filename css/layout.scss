@@ -146,15 +146,16 @@ p {
 }
 
 #c01 {
-    ul {
-        flex-direction: column;
+    .tt{
         gap: 3.125rem;
-
-        li {
-            text-align: center;
-        }
-
-    }
+    
+.line{
+    width: 4.375rem;
+    border: 1px solid var(--Brown-Bage #CDA580);
+    flex-direction: column;
+    gap: 3.125rem;
+}
+}
 }
 
 #c02 {
@@ -432,6 +433,39 @@ p {
             }
            }
         }
+    }
+}
+
+#c06{
+    img{
+        width: 100%;
+    }
+    
+}
+#c07{
+    .insta{
+        flex-direction: column;
+        gap: 4.375rem;
+        .intt{
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            gap: 1.25rem;
+            p {
+                color: var(--Brown-Bage, #CDA580);
+            }
+
+            h1 {
+                color: var(--Sub-Title-Text, #343434);
+            }
+
+            button {
+                position: absolute;
+            }
+        }
+    }
+    .ini{
+        gap: 1.25rem;
     }
 }
 

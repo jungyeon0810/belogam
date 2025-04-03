@@ -59,11 +59,11 @@
 
             <div class="gnb d-flex aic">
                 <ul class="d-flex aic l-menu">
-                    <li><a href="/brand">브랜드</a></li>
-                    <li><a href="">메이드벨로</a></li>
-                    <li><a href="">벨로케어</a></li>
-                    <li><a href="">벨로배송</a></li>
-                    <li><a href="">커뮤니티</a></li>
+                    <li><a href="/page/brand.php">브랜드</a></li>
+                    <li><a href="/page/made.php">메이드벨로</a></li>
+                    <li><a href="/page/care.php">벨로케어</a></li>
+                    <li><a href="/page/delivery.php">벨로배송</a></li>
+                    <li><a href="/page/community.php">커뮤니티</a></li>
                 </ul>
             </div>
 
