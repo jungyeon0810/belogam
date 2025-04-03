@@ -1,63 +1,75 @@
 <?php 
 define('_INDEX_', true);
 include_once("./layout/top.php"); ?>
-<section id="v_slide" class="swiper-container overflow-hidden position-relative">
+<section id="v_slide" class="swiper-container overflow-hidden position-relative d-flex jcc aic">
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex aic">
-            <div class="text d-flex ais">
-                <p class="text01">BeloGem</p>
-                <h1 class="v-text">우리의 목표는 <span class="v-span">세상 모든<br>
-                        반려견</span>들의 <span class="v-span">행복</span> 입니다.</h1>
-                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-            </div>
-        </div>
-        <div class="swiper-slide d-flex aic">
-            <div class="text d-flex ais">
-                <p class="text01">BeloGem</p>
-                <h1 class="v-text">반려견의 <span class="v-span">건강</span>을 위한
-                    <span class="v-span">맞춤형<br> 솔루션</span>을 제공합니다.
-                </h1>
-                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-            </div>
-        </div>
-        <div class="swiper-slide d-flex aic">
-            <div class="text d-flex ais">
-                <p class="text01">BeloGem</p>
-                <h1 class="v-text">다양한 <span class="v-span">이벤트</span>로
-                    반려견과의 <br><span class="v-span">특별한 추억</span>을 만드세요.</h1>
-                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-            </div>
-        </div>
-        <div class="swiper-slide d-flex aic">
-            <div class="text d-flex ais">
-                <p class="text01">BeloGem</p>
-                <h1 class="v-text">모든 반려견을 위한
-                    <span class="v-span">최고의<br> 서비스</span>를 제공합니다.
-                </h1>
-                <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
-            </div>
+      <div class="swiper-slide">
+        <div class="text d-flex ais jcc">
+            <p class="text01">BeloGem</p>
+            <h1 class="v-text">우리의 목표는 <span class="v-span">세상 모든<br>
+                    반려견</span>들의 <span class="v-span">행복</span> 입니다.</h1>
+            <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
         </div>
     </div>
-    <!-- Add navigation buttons -->
-    <div class="swiper-button-next s-btn d-flex jcb"><img src="/images/icon/button/right.svg" alt="오른쪽"></div>
-    <div class="swiper-button-prev s-btn d-flex jcb"><img src="/images/icon/button/left.svg" alt="왼쪽"></div>
-    <!-- Add pagination -->
-    <div class="swiper-pagination"></div>
-</section>
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <div class="swiper-slide">
+        <div class="text d-flex ais">
+            <p class="text01">BeloGem</p>
+            <h1 class="v-text">반려견의 <span class="v-span">건강</span>을 위한
+                <span class="v-span">맞춤형<br> 솔루션</span>을 제공합니다.
+            </h1>
+            <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="text d-flex ais">
+            <p class="text01">BeloGem</p>
+            <h1 class="v-text">반려견의 <span class="v-span">건강</span>을 위한
+                <span class="v-span">맞춤형<br> 솔루션</span>을 제공합니다.
+            </h1>
+            <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="text d-flex ais">
+            <p class="text01">BeloGem</p>
+            <h1 class="v-text">다양한 <span class="v-span">이벤트</span>로
+                반려견과의 <br><span class="v-span">특별한 추억</span>을 만드세요.</h1>
+            <button class="d-flex v-btn">바로가기<img src="/images/icon/button/01.svg" alt="삼각형"></button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <!-- Add navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
 <script>
-    const swiper = new Swiper('#v_slide', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+    var swiper = new Swiper(".mySwiper", {
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+            el: ".swiper-pagination",
+            type: "fraction",
         },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000, // 2초마다 자동 슬라이드
+            disableOnInteraction: false,
+        },
+        loop: true, // 마지막 슬라이드가 끝나면 첫번째 슬라이드로 넘어감
     });
 </script>
 
@@ -66,7 +78,7 @@ include_once("./layout/top.php"); ?>
         <div class="tt d-flex  flex-column jcc aic">
             <div><img src="/images/img/c01_dog.png" alt="강아지"></div>
             <h3 class="title">소중함의 다른 이름 "BeloGem"</h3>
-            <div class="line d-flex aic"></div>
+            <div class="line d-flex aic jcc"></div>
             <p class="text01">벨로젬은 세상에 모든 소중한 반려견의 삶을 보석처럼 빛내기 위해 노력합니다.<br>
                 일반 견종은 물론. 특별한 특수 견종을 위한 맞춤 서비스를 제공합니다.</p>
         </div>

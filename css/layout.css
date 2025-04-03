@@ -106,8 +106,9 @@ p {
   margin: 0;
   padding-bottom: 3.125rem;
 }
-#v_slide .text .s-btn {
-  padding-top: 4.375rem;
+#v_slide .text .right-button-next,
+#v_slide .text .left-button-prev {
+  display: inline-block;
 }
 
 #c01 .tt {
@@ -115,7 +116,7 @@ p {
 }
 #c01 .tt .line {
   width: 4.375rem;
-  border: 1px solid var(--Brown-Bage #CDA580);
+  border-top: 2px solid #CDA580;
   flex-direction: column;
   gap: 3.125rem;
 }

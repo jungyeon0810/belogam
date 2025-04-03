@@ -137,11 +137,10 @@ p {
             margin: 0;
             padding-bottom: 3.125rem;
         }
-
-        .s-btn {
-            padding-top: 4.375rem;
+        .right-button-next,
+        .left-button-prev{
+            display: inline-block;
         }
-
     }
 }
 
@@ -149,12 +148,12 @@ p {
     .tt{
         gap: 3.125rem;
     
-.line{
-    width: 4.375rem;
-    border: 1px solid var(--Brown-Bage #CDA580);
-    flex-direction: column;
-    gap: 3.125rem;
-}
+        .line{
+            width: 4.375rem;
+            border-top: 2px solid #CDA580;
+            flex-direction: column;
+            gap: 3.125rem;
+        }
 }
 }
 
