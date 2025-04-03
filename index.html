@@ -45,10 +45,14 @@ include_once("./layout/top.php"); ?>
       </div>
     </div>
 
-      <!-- Add navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+      <!--  navigation buttons -->
+        <div class="position-absolute top-50 mt-5 start-0 end-0 container mx-auto d-flex gap-5" style="z-index: 100000;">
+            <div class="swiperbtnleft w-auto h-auto text-white">뒤로</div>
+            <div class="swiper-pagination position-relative text-white"></div>
+            <div class="swiperbtnright w-auto h-auto text-white">앞으로</div>
+        </div>
+   
+    
   </div>
 </section>
   <!-- Swiper JS -->
@@ -59,11 +63,11 @@ include_once("./layout/top.php"); ?>
     var swiper = new Swiper(".mySwiper", {
         pagination: {
             el: ".swiper-pagination",
-            type: "fraction",
+            type: "fraction", 
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiperbtnright",
+            prevEl: ".swiperbtnleft",
         },
         autoplay: {
             delay: 2000, // 2초마다 자동 슬라이드
