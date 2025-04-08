@@ -106,9 +106,40 @@ p {
   margin: 0;
   padding-bottom: 3.125rem;
 }
-#v_slide .text .right-button-next,
+#v_slide .text .right-button-next {
+  padding-right: 2.1875rem;
+}
 #v_slide .text .left-button-prev {
-  display: inline-block;
+  padding-left: 2.1875rem;
+}
+#v_slide .bulletbtn {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+#v_slide .bulletbtn .swiperbullet {
+  position: unset !important;
+}
+#v_slide .bulletbtn span.swiper-pagination-current {
+  color: var(--Light-Gray, #F5F5F5);
+  font-family: "Noto Sans KR";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+  /* 100% */
+  letter-spacing: -0.03375rem;
+}
+#v_slide .bulletbtn span.swiper-pagination-total {
+  color: var(--Light-Gray, #F5F5F5);
+  opacity: 0.5;
+  font-family: "Noto Sans KR";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+  /* 100% */
+  letter-spacing: -0.03375rem;
 }
 
 #c01 .tt {
@@ -261,7 +292,8 @@ p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 350;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.03rem;
 }
 #c05 .diary .il .i-1 a span {
@@ -270,7 +302,8 @@ p {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.0375rem;
 }
 #c05 .diary .il .ir .i4 {
@@ -290,7 +323,8 @@ p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 350;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.03rem;
 }
 #c05 .diary .il .ir .i4 .i-2 span {
@@ -299,7 +333,8 @@ p {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.0375rem;
 }
 #c05 .diary .il .ir .i4-1 {
@@ -318,7 +353,8 @@ p {
   font-size: 1rem;
   font-style: normal;
   font-weight: 350;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.03rem;
 }
 #c05 .diary .il .ir .i4-1 .i-2 span {
@@ -327,7 +363,8 @@ p {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.25rem; /* 100% */
+  line-height: 1.25rem;
+  /* 100% */
   letter-spacing: -0.0375rem;
 }
 
@@ -401,7 +438,8 @@ p {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 1.125rem; /* 100% */
+  line-height: 1.125rem;
+  /* 100% */
   letter-spacing: -0.03375rem;
 }
 #ft .ft-inner .company .cn p span {
@@ -410,6 +448,7 @@ p {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.125rem; /* 100% */
+  line-height: 1.125rem;
+  /* 100% */
   letter-spacing: -0.03375rem;
 }

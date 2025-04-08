@@ -137,24 +137,69 @@ p {
             margin: 0;
             padding-bottom: 3.125rem;
         }
-        .right-button-next,
-        .left-button-prev{
-            display: inline-block;
+
+        .right-button-next {
+            padding-right: 2.1875rem;
+        }
+
+        .left-button-prev {
+            padding-left: 2.1875rem;
+        }
+
+    }
+
+
+    .bulletbtn {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+
+        .swiperbullet {
+            position: unset !important;
+        }
+
+        span {
+
+            &.swiper-pagination-current {
+                color: var(--Light-Gray, #F5F5F5);
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.125rem;
+                /* 100% */
+                letter-spacing: -0.03375rem;
+
+            }
+
+            &.swiper-pagination-total {
+                color: var(--Light-Gray, #F5F5F5);
+                opacity: 0.5;
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.125rem;
+                /* 100% */
+                letter-spacing: -0.03375rem;
+
+            }
+
         }
     }
 }
 
 #c01 {
-    .tt{
+    .tt {
         gap: 3.125rem;
-    
-        .line{
+
+        .line {
             width: 4.375rem;
             border-top: 2px solid #CDA580;
             flex-direction: column;
             gap: 3.125rem;
         }
-}
+    }
 }
 
 #c02 {
@@ -259,57 +304,58 @@ p {
 
 #c04 {
     background: #FEFAF5;
-    .inner{
+
+    .inner {
         padding: 7.5rem 0rem;
 
-    .pd {
-        flex-direction: column;
-        gap: 4.375rem;
-
-        .ptt {
-            width: 100%;
-            position: relative;
+        .pd {
             flex-direction: column;
-            gap: 1.25rem;
+            gap: 4.375rem;
 
-            p {
-                color: var(--Brown-Bage, #CDA580);
-            }
-
-            h1 {
-                color: var(--Sub-Title-Text, #343434);
-            }
-
-            button {
-                position: absolute;
-            }
-        }
-
-
-    }
-
-
-    .p-content {
-        gap: 1.3125rem;
-
-        .p01 {
-
-            .pi {
+            .ptt {
+                width: 100%;
+                position: relative;
                 flex-direction: column;
-                padding-bottom: 0.3125rem;
+                gap: 1.25rem;
 
-                .pt {
-                    flex-direction: column;
+                p {
+                    color: var(--Brown-Bage, #CDA580);
+                }
+
+                h1 {
+                    color: var(--Sub-Title-Text, #343434);
+                }
+
+                button {
+                    position: absolute;
                 }
             }
 
+
         }
 
+
+        .p-content {
+            gap: 1.3125rem;
+
+            .p01 {
+
+                .pi {
+                    flex-direction: column;
+                    padding-bottom: 0.3125rem;
+
+                    .pt {
+                        flex-direction: column;
+                    }
+                }
+
+            }
+
+        }
     }
 }
-}
 
-#c05{
+#c05 {
     .diary {
         flex-direction: column;
         gap: 4.375rem;
@@ -333,13 +379,15 @@ p {
             }
         }
 
-        .il{
-            .i-1{
+        .il {
+            .i-1 {
                 position: relative;
-                img{
+
+                img {
                     padding-right: 1.25rem;
                 }
-                a{
+
+                a {
                     gap: 1.25rem;
                     position: absolute;
                     bottom: 1.25rem;
@@ -349,107 +397,121 @@ p {
                     font-size: 1rem;
                     font-style: normal;
                     font-weight: 350;
-                    line-height: 1.25rem; /* 100% */
+                    line-height: 1.25rem;
+                    /* 100% */
                     letter-spacing: -0.03rem;
-                
 
-                    span{
+
+                    span {
                         color: var(--Light-Gray, #F5F5F5);
                         font-family: MaruBuri;
                         font-size: 1.25rem;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 1.25rem; /* 100% */
+                        line-height: 1.25rem;
+                        /* 100% */
                         letter-spacing: -0.0375rem;
-                        
-                    }
-                }
-            }
-           .ir{
-            .i4{
-                gap: 1.25rem;
-                padding-right:1.25rem;
-                
-                .i-2{
-                    position: relative;
 
-                    a{
-                        gap: 1.25rem;
-                        position: absolute;
-                        bottom: 1.25rem;
-                        left: 1.25rem;
-                        color: var(--Light-Gray, #F5F5F5);
-                        font-family: "Noto Sans KR";
-                        font-size: 1rem;
-                        font-style: normal;
-                        font-weight: 350;
-                        line-height: 1.25rem; /* 100% */
-                        letter-spacing: -0.03rem;
-                    }
-                    span{
-                        color: var(--Light-Gray, #F5F5F5);
-                        font-family: MaruBuri;
-                        font-size: 1.25rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1.25rem; /* 100% */
-                        letter-spacing: -0.0375rem;
-                        
                     }
                 }
-                
             }
-            .i4-1{
-                gap: 1.25rem;
-                .i-2{
-                    position: relative;
 
-                    a{
-                        gap: 1.25rem;
-                        position: absolute;
-                        bottom: 1.25rem;
-                        left: 1.25rem;
-                        color: var(--Light-Gray, #F5F5F5);
-                        font-family: "Noto Sans KR";
-                        font-size: 1rem;
-                        font-style: normal;
-                        font-weight: 350;
-                        line-height: 1.25rem; /* 100% */
-                        letter-spacing: -0.03rem;
+            .ir {
+                .i4 {
+                    gap: 1.25rem;
+                    padding-right: 1.25rem;
+
+                    .i-2 {
+                        position: relative;
+
+                        a {
+                            gap: 1.25rem;
+                            position: absolute;
+                            bottom: 1.25rem;
+                            left: 1.25rem;
+                            color: var(--Light-Gray, #F5F5F5);
+                            font-family: "Noto Sans KR";
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 350;
+                            line-height: 1.25rem;
+                            /* 100% */
+                            letter-spacing: -0.03rem;
+                        }
+
+                        span {
+                            color: var(--Light-Gray, #F5F5F5);
+                            font-family: MaruBuri;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.25rem;
+                            /* 100% */
+                            letter-spacing: -0.0375rem;
+
+                        }
                     }
-                    span{
-                        color: var(--Light-Gray, #F5F5F5);
-                        font-family: MaruBuri;
-                        font-size: 1.25rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1.25rem; /* 100% */
-                        letter-spacing: -0.0375rem;
-                        
-                    }
+
                 }
-                
+
+                .i4-1 {
+                    gap: 1.25rem;
+
+                    .i-2 {
+                        position: relative;
+
+                        a {
+                            gap: 1.25rem;
+                            position: absolute;
+                            bottom: 1.25rem;
+                            left: 1.25rem;
+                            color: var(--Light-Gray, #F5F5F5);
+                            font-family: "Noto Sans KR";
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 350;
+                            line-height: 1.25rem;
+                            /* 100% */
+                            letter-spacing: -0.03rem;
+                        }
+
+                        span {
+                            color: var(--Light-Gray, #F5F5F5);
+                            font-family: MaruBuri;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.25rem;
+                            /* 100% */
+                            letter-spacing: -0.0375rem;
+
+                        }
+                    }
+
+                }
             }
-           }
         }
     }
 }
 
-#c06{
-    img{
+#c06 {
+    img {
         width: 100%;
     }
-    
+
 }
-#c07{
-    .insta{
+
+#c07 {
+    .insta {
         flex-direction: column;
         gap: 4.375rem;
-        .intt{
+
+        .intt {
             width: 100%;
             position: relative;
             flex-direction: column;
             gap: 1.25rem;
+
             p {
                 color: var(--Brown-Bage, #CDA580);
             }
@@ -463,7 +525,8 @@ p {
             }
         }
     }
-    .ini{
+
+    .ini {
         gap: 1.25rem;
     }
 }
@@ -495,45 +558,48 @@ p {
                     opacity: 0.3;
                     padding-left: 1.25rem;
 
-                    }
-                }
-        }
-
-        .line{
-                p{
-                    opacity: 0.5;
-                    border-bottom: 1px solid var(--Brown-Bage, #CDA580);
-                    padding-top: 3.125rem;
                 }
             }
-        .company{
+        }
+
+        .line {
+            p {
+                opacity: 0.5;
+                border-bottom: 1px solid var(--Brown-Bage, #CDA580);
+                padding-top: 3.125rem;
+            }
+        }
+
+        .company {
             padding-top: 3.125rem;
 
-            .cn{
+            .cn {
                 flex-direction: column;
                 gap: 0.9375rem;
 
-            p{
-                color: #BDBDBD;
-                font-family: "Noto Sans KR";
-                font-size: 1.125rem;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 1.125rem; /* 100% */
-                letter-spacing: -0.03375rem;
-
-                span{    
-                    color: var(--White-Text, #FFF);
+                p {
+                    color: #BDBDBD;
                     font-family: "Noto Sans KR";
                     font-size: 1.125rem;
                     font-style: normal;
-                    font-weight: 500;
-                    line-height: 1.125rem; /* 100% */
+                    font-weight: 300;
+                    line-height: 1.125rem;
+                    /* 100% */
                     letter-spacing: -0.03375rem;
+
+                    span {
+                        color: var(--White-Text, #FFF);
+                        font-family: "Noto Sans KR";
+                        font-size: 1.125rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.125rem;
+                        /* 100% */
+                        letter-spacing: -0.03375rem;
                     }
+                }
             }
         }
-        }
-        
+
     }
 }

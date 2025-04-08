@@ -46,11 +46,11 @@ include_once("./layout/top.php"); ?>
     </div>
 
       <!--  navigation buttons -->
-        <div class="position-absolute top-50 mt-5 start-0 end-0 container mx-auto d-flex gap-5" style="z-index: 100000;">
-            <div class="swiperbtnleft w-auto h-auto text-white">뒤로</div>
-            <div class="swiper-pagination position-relative text-white"></div>
-            <div class="swiperbtnright w-auto h-auto text-white">앞으로</div>
-        </div>
+        <div class=" bulletbtn inner d-flex aic gap-5">
+            <div class="swiperbtnleft w-auto h-auto text-white inner-v"><img src="/images/icon/button/left.svg" alt="뒤로"></div>
+            <div class="swiperbullet d-flex aic position-relative text-white gap-2 inner-v"></div>
+            <div class="swiperbtnright w-auto h-auto text-white inner-v"><img src="/images/icon/button/right.svg" alt="앞으로"></div>
+    </div>
    
     
   </div>
@@ -62,7 +62,7 @@ include_once("./layout/top.php"); ?>
 <script>
     var swiper = new Swiper(".mySwiper", {
         pagination: {
-            el: ".swiper-pagination",
+            el: ".swiperbullet",
             type: "fraction", 
         },
         navigation: {
