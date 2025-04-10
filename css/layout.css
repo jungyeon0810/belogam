@@ -219,6 +219,10 @@ p {
 #c03 .inner .event .ett button {
   position: absolute;
 }
+#c03 .inner .e-text {
+  padding-top: 0.5rem;
+  gap: 1.0625rem;
+}
 #c03 .inner .e-text h3 a {
   color: var(--Title-Text, #232326);
   font-family: MaruBuri;
@@ -237,7 +241,7 @@ p {
   line-height: 1rem; /* 100% */
   letter-spacing: -0.03rem;
 }
-#c03 .inner .e-text h2 {
+#c03 .inner .e-text p span {
   color: var(--Brown-Bage, #CDA580);
   text-align: right;
   font-family: "Noto Sans KR";
