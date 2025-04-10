@@ -92,6 +92,7 @@ p {
   background-image: url(/images/img/main_visual01.jpg);
   width: 100%;
   height: 100vh;
+  background-size: cover;
 }
 #v_slide .text {
   flex-direction: column;
@@ -200,29 +201,59 @@ p {
   color: var(---, var(--White-Text, #FFF));
 }
 
-#c03 .event {
+#c03 .inner .event {
   flex-direction: column;
-  gap: 4.375rem;
+  padding-bottom: 4.375rem;
 }
-#c03 .event .ett {
-  width: 100%;
+#c03 .inner .event .ett {
   position: relative;
   flex-direction: column;
   gap: 1.25rem;
 }
-#c03 .event .ett p {
+#c03 .inner .event .ett P {
   color: var(--Brown-Bage, #CDA580);
 }
-#c03 .event .ett h1 {
+#c03 .inner .event .ett h1 {
   color: var(--Sub-Title-Text, #343434);
 }
-#c03 .event .ett button {
+#c03 .inner .event .ett button {
   position: absolute;
 }
-#c03 .event .e-bulletbtn .e-swiperbullet {
+#c03 .inner .e-text h3 a {
+  color: var(--Title-Text, #232326);
+  font-family: MaruBuri;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 100% */
+  letter-spacing: -0.0375rem;
+}
+#c03 .inner .e-text p {
+  color: var(--Light-Text, #838383);
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1rem; /* 100% */
+  letter-spacing: -0.03rem;
+}
+#c03 .inner .e-text h2 {
+  color: var(--Brown-Bage, #CDA580);
+  text-align: right;
+  font-family: "Noto Sans KR";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem; /* 100% */
+  letter-spacing: -0.04125rem;
+}
+#c03 .inner .e-bulletbtn {
+  padding-top: 4.375rem;
+}
+#c03 .inner .e-bulletbtn .e-swiperbullet {
   position: unset !important;
 }
-#c03 .event .e-bulletbtn span.swiper-pagination-current {
+#c03 .inner .e-bulletbtn span.swiper-pagination-current {
   color: var(--Raisin-Black, #232326);
   font-family: "Noto Sans KR";
   font-size: 1.125rem;
@@ -232,7 +263,7 @@ p {
   /* 100% */
   letter-spacing: -0.03375rem;
 }
-#c03 .event .e-bulletbtn span.swiper-pagination-total {
+#c03 .inner .e-bulletbtn span.swiper-pagination-total {
   color: var(--Raisin-Black, #232326);
   opacity: 0.5;
   font-family: "Noto Sans KR";
@@ -242,15 +273,6 @@ p {
   line-height: 1.125rem;
   /* 100% */
   letter-spacing: -0.03375rem;
-}
-#c03 .e-content {
-  gap: 1.3125rem;
-}
-#c03 .e-content .e01 .ei {
-  flex-direction: column;
-}
-#c03 .e-content .e01 .ei .et {
-  flex-direction: column;
 }
 
 #c04 {
@@ -294,7 +316,6 @@ p {
   gap: 4.375rem;
 }
 #c05 .diary .dtt {
-  width: 100%;
   position: relative;
   flex-direction: column;
   gap: 1.25rem;

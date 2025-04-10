@@ -1,6 +1,9 @@
 <?php 
 define('_INDEX_', true);
 include_once("./layout/top.php"); ?>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <section id="v_slide" class="swiper-container overflow-hidden position-relative d-flex jcc aic">
     <!-- Swiper -->
     <div class="swiper mySwiper">
@@ -56,27 +59,8 @@ include_once("./layout/top.php"); ?>
 
     </div>
 </section>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiperbullet",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiperbtnright",
-            prevEl: ".swiperbtnleft",
-        },
-        autoplay: {
-            delay: 2000, // 2초마다 자동 슬라이드
-            disableOnInteraction: false,
-        },
-        loop: true, // 마지막 슬라이드가 끝나면 첫번째 슬라이드로 넘어감
-    });
-</script>
+
 
 <section id="c01" class="p170">
     <div class=" d-flex jcc aic">
@@ -115,8 +99,8 @@ include_once("./layout/top.php"); ?>
 
 </section>
 
-<section id="c03" class="p170 inner">
-
+<section id="c03" class="p170">
+<div class="inner">
     <div class="event d-flex">
 
         <div class="ett d-flex aic">
@@ -125,76 +109,92 @@ include_once("./layout/top.php"); ?>
             <button class="btn02 d-flex">전체보기</button>
         </div>
 
-        <!-- Swiper -->
-        <div class="swiper mySwiper e-content d-flex aic jcc inner">
-            <div class="swiper-wrapper d-flex aic">
-                <div class="swiper-slide">
-                    <div class="e01 d-flex">
+    </div>
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+            <img src="/images/img/c03_01.jpg" alt="이벤트01">
+        <div class="e-text d-flex flex-column">
+        <h3><a href="">배변훈련 이벤트</a></h3>
+        <p>반려견 배변성공 인증 시 응모가능</p>
+        <h2 class="text01">~25.02.10</h2>
+    </div>
+      </div>
 
-                        <div class="ei d-flex">
-                            <img src="/images/img/c03_01.jpg" alt="이벤트01">
+      <div class="swiper-slide">
+        <img src="/images/img/c03_01.jpg" alt="이벤트01">
+    <div class="e-text d-flex flex-column">
+    <h3><a href="">배변훈련 이벤트</a></h3>
+    <p>반려견 배변성공 인증 시 응모가능</p>
+    <h2 class="text01">~25.02.10</h2>
+</div>
+  </div>
 
-                            <div class="et d-flex">
-                                <p><a href="">배변훈련 이벤트</a></p>
-                                <p>반려견 배변 성공인증 시 응모가능 </p>
-                                <p>~25.02.10</p>
-                            </div>
+  <div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                        </div>
-                    </div>
-                </div>
+<div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                <div class="swiper-slide">
-                    <div class="e01 d-flex ">
+<div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                        <div class="ei d-flex">
-                            <img src="/images/img/c03_02.jpg" alt="이벤트02">
+<div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                            <div class="et d-flex ">
-                                <p><a href="">배변훈련 이벤트</a></p>
-                                <p>반려견 배변 성공인증 시 응모가능 </p>
-                                <p>~25.02.10</p>
-                            </div>
+<div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                        </div>
-                    </div>
-                </div>
+<div class="swiper-slide">
+    <img src="/images/img/c03_01.jpg" alt="이벤트01">
+<div class="e-text d-flex flex-column">
+<h3><a href="">배변훈련 이벤트</a></h3>
+<p>반려견 배변성공 인증 시 응모가능</p>
+<h2 class="text01">~25.02.10</h2>
+</div>
+</div>
 
-                <div class="swiper-slide">
-                    <div class="e01 d-flex">
-
-                        <div class="ei d-flex">
-                            <img src="/images/img/c03_03.jpg" alt="이벤트03">
-
-                            <div class="et d-flex">
-                                <p><a href="">배변훈련 이벤트</a></p>
-                                <p>반려견 배변 성공인증 시 응모가능 </p>
-                                <p>~25.02.10</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="e01 d-flex ">
-
-                        <div class="ei d-flex">
-                            <img src="/images/img/c03_02.jpg" alt="이벤트04">
-
-                            <div class="et d-flex ">
-                                <p><a href="">배변훈련 이벤트</a></p>
-                                <p>반려견 배변 성공인증 시 응모가능 </p>
-                                <p>~25.02.10</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+      <div class="swiper-slide">
+        <img src="/images/img/c03_01.jpg" alt="이벤트01">
+    <div class="e-text d-flex flex-column">
+    <h3><a href="">배변훈련 이벤트</a></h3>
+    <p>반려견 배변성공 인증 시 응모가능</p>
+    <h2 class="text01">~25.02.10</h2>
+</div>
+  </div>
+    </div>
+      
     <!--  navigation buttons -->
     <div class=" e-bulletbtn d-flex aic jcc gap-5">
         <div class="e-swiperbtnleft w-auto h-auto text-black inner-v"><img src="/images/icon/button/left02.svg"
@@ -202,28 +202,9 @@ include_once("./layout/top.php"); ?>
         <div class="e-swiperbullet d-flex aic position-relative gap-2 inner-v"></div>
         <div class="e-swiperbtnright w-auto h-auto inner-v"><img src="/images/icon/button/right02.svg" alt="앞으로"></div>
     </div>
-</div>
-</section>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        pagination: {
-            el: ".e-swiperbullet",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".e-swiperbtnright",
-            prevEl: ".e-swiperbtnleft",
-        },
-        loop: true, // 마지막 슬라이드가 끝나면 첫번째 슬라이드로 넘어감
-    });
-</script>
+    </div><!--inner-->
+    
+    </section>
 
 
 <section id="c04">
@@ -232,78 +213,164 @@ include_once("./layout/top.php"); ?>
         <div class="pd d-flex">
 
             <div class="ptt d-flex aic">
-                <p class="s-title">Belo Event</p>
-                <h1 class="title">벨로 이벤트</h1>
+                <p class="s-title">Belo Delivery</p>
+                <h1 class="title">벨로 배송</h1>
                 <button class="btn02 d-flex">전체보기</button>
             </div>
 
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="p-content d-flex jcc">
-            <div class="p01 d-flex">
+             <!-- Swiper -->
+  <div class="swiper mySwiper inner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex gap-2">
+                <div class="p-content d-flex jcc">
+                    <div class="p01 d-flex">
 
-                <div class="pi d-flex">
-                    <img src="/images/img/c04_01.jpg" alt="상품01">
+                        <div class="pi d-flex">
+                            <img src="/images/img/c04_01.jpg" alt="상품01">
 
-                    <div class="pt d-flex">
-                        <p><a href="">산책용품</a></p>
-                        <p>올데이 라이트 일체형 유모차</p>
-                        <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
-                        <p>400,000원<span>280,000원</span></p>
-                    </div>
+                            <div class="pt d-flex">
+                                <p><a href="">산책용품</a></p>
+                                <p>올데이 라이트 일체형 유모차</p>
+                                <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
+                                <p>400,000원<span>280,000원</span></p>
+                            </div>
 
-                </div><!--ei-->
-            </div><!--e01-->
-      </div>
-      <div class="swiper-slide">
-        <div class="p01 d-flex">
-
-            <div class="pi d-flex">
-                <img src="/images/img/c04_02.jpg" alt="상품02">
-
-                <div class="pt d-flex">
-                    <p><a href="">장난감</a></p>
-                    <p>킁킁베어 노즈워크 장난감</p>
-                    <p>총 5가지 감각을 자극하는 똑똑한 장난감</p>
-                    <p><span>22,000원</span></p>
+                        </div><!--ei-->
+                    </div><!--e01-->
                 </div>
 
-            </div><!--ei-->
-        </div><!--e01-->
-      </div>
-      <div class="swiper-slide">
-        <div class="p01 d-flex">
+                <div class="p-content d-flex jcc">
+                    <div class="p01 d-flex">
 
-            <div class="pi d-flex">
-                <img src="/images/img/c04_03jpg.jpg" alt="상품03">
+                        <div class="pi d-flex">
+                            <img src="/images/img/c04_01.jpg" alt="상품01">
 
-                <div class="pt d-flex">
-                    <p><a href="">맞춤 사료</a></p>
-                    <p>스몰배치 치킨 슬라이더</p>
-                    <p>‘공식 인증’된 최상급 육류를 사용하였습니다.</p>
-                    <p><span>63,000원</span></p>
+                            <div class="pt d-flex">
+                                <p><a href="">산책용품</a></p>
+                                <p>올데이 라이트 일체형 유모차</p>
+                                <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
+                                <p>400,000원<span>280,000원</span></p>
+                            </div>
+
+                        </div><!--ei-->
+                    </div><!--e01-->
                 </div>
 
-            </div><!--ei-->
-        </div><!--e01-->
-      </div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+                <div class="p-content d-flex jcc">
+                    <div class="p01 d-flex">
+
+                        <div class="pi d-flex">
+                            <img src="/images/img/c04_01.jpg" alt="상품01">
+
+                            <div class="pt d-flex">
+                                <p><a href="">산책용품</a></p>
+                                <p>올데이 라이트 일체형 유모차</p>
+                                <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
+                                <p>400,000원<span>280,000원</span></p>
+                            </div>
+
+                        </div><!--ei-->
+                    </div><!--e01-->
+                </div>
+
+                <div class="p-content d-flex jcc">
+                    <div class="p01 d-flex">
+
+                        <div class="pi d-flex">
+                            <img src="/images/img/c04_01.jpg" alt="상품01">
+
+                            <div class="pt d-flex">
+                                <p><a href="">산책용품</a></p>
+                                <p>올데이 라이트 일체형 유모차</p>
+                                <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
+                                <p>400,000원<span>280,000원</span></p>
+                            </div>
+
+                        </div><!--ei-->
+                    </div><!--e01-->
+                </div>
+            
+            </div>
+
+            <div class="swiper-slide d-flex jcc">
+                <div class="p-content d-flex jcc">
+                    <div class="p01 d-flex">
+
+                        <div class="pi d-flex">
+                            <img src="/images/img/c04_02.jpg" alt="상품01">
+
+                            <div class="pt d-flex">
+                                <p><a href="">산책용품</a></p>
+                                <p>올데이 라이트 일체형 유모차</p>
+                                <p>초간단 폴딩과 라이트한 무게로 눈구나 쉽게 사용!</p>
+                                <p>400,000원<span>280,000원</span></p>
+                            </div>
+
+                        </div><!--ei-->
+                    </div><!--e01-->
+
+                    
+                </div>
+            
+            </div>
+        </div>
+        <!-- navigation buttons-->
+        <div class="c-swiperbtnnext"><img src="/images/icon/button/right03.svg" alt="앞으로"></div>
+        <div class="c-swiperbtnprev"><img src="/images/icon/button/left03.svg" alt="뒤로"></div>
+        <div class="swiper-pagination"></div>
+    
+
+  </div><!--pd-->
+</div><!--inner-->
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-        </div><!--pd-->
-    </div><!--inner-->
 </section>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+            const v_slide = new Swiper("#v_slide .mySwiper", {
+        pagination: {
+            el: ".swiperbullet",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiperbtnright",
+            prevEl: ".swiperbtnleft",
+        },
+        autoplay: {
+            delay: 2000, // 2초마다 자동 슬라이드
+            disableOnInteraction: false,
+        },
+        loop: true, // 마지막 슬라이드가 끝나면 첫번째 슬라이드로 넘어감
+    });
+    const c03 = new Swiper("#c03 .mySwiper", {
+        slidesPerView: 3,
+        slidespergroup: 3,
+        spaceBetween: 20,
+        pagination: {
+            el: ".e-swiperbullet",
+            type: "fraction",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".e-swiperbtnright",
+            prevEl: ".e-swiperbtnleft",
+        },
+        loop: true, // 마지막 슬라이드가 끝나면 첫번째 슬라이드로 넘어감
+    });
+   const c04 = new Swiper("#c04 .mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".c-swiperbtnnext",
+        prevEl: ".c-swiperbtnprev",
+      },
+    });
+  </script>
+ 
+
 
 <section id="c05" class="p170 inner">
 

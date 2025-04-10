@@ -122,6 +122,7 @@ p {
     background-image: url(/images/img/main_visual01.jpg);
     width: 100%;
     height: 100vh;
+    background-size: cover;
 
     .text {
         flex-direction: column;
@@ -267,22 +268,20 @@ p {
 
 }
 
-#c03 {
-
-    .event {
+#c03{
+    .inner{
+    .event{
         flex-direction: column;
-        gap: 4.375rem;
+        padding-bottom: 4.375rem;
 
-        .ett {
-            width: 100%;
+        .ett{
             position: relative;
             flex-direction: column;
             gap: 1.25rem;
 
-            p {
+            P{
                 color: var(--Brown-Bage, #CDA580);
             }
-
             h1 {
                 color: var(--Sub-Title-Text, #343434);
             }
@@ -291,64 +290,82 @@ p {
                 position: absolute;
             }
         }
-        .e-bulletbtn {
-    
-            .e-swiperbullet {
-                position: unset !important;
-            }
-    
-            span {
-    
-                &.swiper-pagination-current {
-                    color: var(--Raisin-Black, #232326);
-                    font-family: "Noto Sans KR";
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 1.125rem;
-                    /* 100% */
-                    letter-spacing: -0.03375rem;
-    
-                }
-    
-                &.swiper-pagination-total {
-                    color: var(--Raisin-Black, #232326);
-                    opacity: 0.5;
-                    font-family: "Noto Sans KR";
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 1.125rem;
-                    /* 100% */
-                    letter-spacing: -0.03375rem;
-    
-                }
-        }
-    }
-
-
-
-
-    }
-
-
-    .e-content {
-        gap: 1.3125rem;
-
-        .e01 {
-
-            .ei {
-                flex-direction: column;
-
-                .et {
-                    flex-direction: column;
-                }
-            }
+        
 
         }
+        .e-content{
+            
+    }
+    .e-text{
+        h3 a{
+            color: var(--Title-Text, #232326);
+            font-family: MaruBuri;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem; /* 100% */
+            letter-spacing: -0.0375rem;
+        }
+        p{
+            color: var(--Light-Text, #838383);
+            font-family: "Noto Sans KR";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 1rem; /* 100% */
+            letter-spacing: -0.03rem;
+        }
+        h2{
+            color: var(--Brown-Bage, #CDA580);
+            text-align: right;
+            font-family: "Noto Sans KR";
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.375rem; /* 100% */
+            letter-spacing: -0.04125rem;
+        }
+    }
+    .e-bulletbtn {
+        padding-top: 4.375rem;
+    
+        .e-swiperbullet {
+            position: unset !important;
+        }
+
+        span {
+
+            &.swiper-pagination-current {
+                color: var(--Raisin-Black, #232326);
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.125rem;
+                /* 100% */
+                letter-spacing: -0.03375rem;
+
+            }
+
+            &.swiper-pagination-total {
+                color: var(--Raisin-Black, #232326);
+                opacity: 0.5;
+                font-family: "Noto Sans KR";
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.125rem;
+                /* 100% */
+                letter-spacing: -0.03375rem;
+
+            }
+    }
+}
 
     }
 }
+
+
 
 #c04 {
     background: #FEFAF5;
@@ -409,7 +426,6 @@ p {
         gap: 4.375rem;
 
         .dtt {
-            width: 100%;
             position: relative;
             flex-direction: column;
             gap: 1.25rem;
