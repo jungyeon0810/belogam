@@ -282,12 +282,10 @@ p {
 #c04 {
   background: #FEFAF5;
 }
-#c04 .inner {
-  padding: 7.5rem 0rem;
-}
 #c04 .inner .pd {
   flex-direction: column;
   gap: 4.375rem;
+  padding: 7.5rem 0rem;
 }
 #c04 .inner .pd .ptt {
   width: 100%;
@@ -304,14 +302,98 @@ p {
 #c04 .inner .pd .ptt button {
   position: absolute;
 }
-#c04 .inner .p-content {
+#c04 .inner .pd .swiper-slide {
+  gap: 1.25rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi {
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt {
+  flex-direction: column;
+  gap: 1.0625rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt p a {
+  color: var(--Brown-Bage, #CDA580);
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1rem; /* 100% */
+  letter-spacing: -0.03rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt p a span {
+  color: var(--Sub-Title-Text, #343434);
+  font-family: MaruBuri;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 100% */
+  letter-spacing: -0.0375rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt h4 {
+  color: var(--Light-Text, #838383);
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1rem; /* 100% */
+  letter-spacing: -0.03rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt .number {
+  gap: 0.625rem;
+  color: var(--Brown-Bage, #CDA580);
+  text-align: right;
+  font-family: "Noto Sans KR";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem; /* 100% */
+  letter-spacing: -0.04125rem;
+}
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt .number span {
+  color: var(--Light-Text, #838383);
+  text-align: right;
+  font-family: "Noto Sans KR";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1rem; /* 100% */
+  letter-spacing: -0.03rem;
+  text-decoration-line: line-through;
+}
+#c04 .inner .pd .swiper-slide .c-swiperbtnprev img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#c04 .inner .pd .swiper-slide .c-swiperbtnnext img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#c04 .inner .pd .swiper-slide .swiperprograssbar {
+  margin-top: 70px;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #BEBEBE;
+  border-radius: 100px;
+}
+#c04 .inner .pd .swiper-slide .swiperprograssbar .swiper-pagination-progressbar-fill {
+  width: 25%;
+  border-radius: 100px;
+  background-color: #232326;
+  height: 3px;
+  align-items: center;
+}
+#c04 .inner .pd .p-content {
   gap: 1.3125rem;
 }
-#c04 .inner .p-content .p01 .pi {
+#c04 .inner .pd .p-content .p01 .pi {
   flex-direction: column;
   padding-bottom: 0.3125rem;
 }
-#c04 .inner .p-content .p01 .pi .pt {
+#c04 .inner .pd .p-content .p01 .pi .pt {
   flex-direction: column;
 }
 

@@ -293,9 +293,7 @@ p {
         
 
         }
-        .e-content{
-            
-    }
+
     .e-text{
         padding-top: 0.5rem;
         gap: 1.0625rem;
@@ -374,11 +372,13 @@ p {
     background: #FEFAF5;
 
     .inner {
-        padding: 7.5rem 0rem;
+        
 
         .pd {
             flex-direction: column;
             gap: 4.375rem;
+            padding: 7.5rem 0rem;
+
 
             .ptt {
                 width: 100%;
@@ -398,9 +398,109 @@ p {
                     position: absolute;
                 }
             }
+.swiper-slide{
+    gap: 1.25rem;
+            .p-content{
+                .p01{
+                    .pi{
+                        flex-direction: column;
+                        gap: 1.5625rem;
+                        .pt{
+                            flex-direction: column;
+                            gap: 1.0625rem;
+                            p{
+                                a{
+                                    color: var(--Brown-Bage, #CDA580);
+                                    font-family: "Noto Sans KR";
+                                    font-size: 1rem;
+                                    font-style: normal;
+                                    font-weight: 350;
+                                    line-height: 1rem; /* 100% */
+                                    letter-spacing: -0.03rem;
+                                    span{
+                                        color: var(--Sub-Title-Text, #343434);
+                                        font-family: MaruBuri;
+                                        font-size: 1.25rem;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 1.25rem; /* 100% */
+                                        letter-spacing: -0.0375rem;
+                                    }
+                                }
 
+                            }
+                            h4{
+                                color: var(--Light-Text, #838383);
+                                font-family: "Noto Sans KR";
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 350;
+                                line-height: 1rem; /* 100% */
+                                letter-spacing: -0.03rem;
+                            }
+                            .number{
+                                gap: 0.625rem;
+                                color: var(--Brown-Bage, #CDA580);
+                                text-align: right;
+                                font-family: "Noto Sans KR";
+                                font-size: 1.375rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 1.375rem; /* 100% */
+                                letter-spacing: -0.04125rem;
+                            
+                            span{
+                                color: var(--Light-Text, #838383);
+                                text-align: right;
+                                font-family: "Noto Sans KR";
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 350;
+                                line-height: 1rem; /* 100% */
+                                letter-spacing: -0.03rem;
+                                text-decoration-line: line-through;
+                            }
+                        }
+                        }
+                    }
+                }
+            }
 
-        }
+            .c-swiperbtnprev{
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                }
+                
+                
+            }
+            .c-swiperbtnnext{
+                img{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+
+                
+            }
+
+            .swiperprograssbar{
+                margin-top: 70px;
+                width: 100%;
+                height: 0.0625rem;
+                background-color: #BEBEBE;
+                border-radius: 100px;
+                .swiper-pagination-progressbar-fill{
+                    width: 25%;
+                    border-radius: 100px;
+                    background-color: #232326;
+                    height: 3px;
+                    align-items: center;
+                }
+            }
+
+        } 
 
 
         .p-content {
@@ -421,6 +521,7 @@ p {
 
         }
     }
+}
 }
 
 #c05 {
