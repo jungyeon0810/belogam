@@ -238,6 +238,8 @@ p {
     .left {
         height: 43.75rem;
         background-image: url(/images/img/c02_01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
         flex-grow: 1;
 
         .l-text {
@@ -270,6 +272,8 @@ p {
     .right {
         height: 43.75rem;
         background-image: url(/images/img/c02_02.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
         flex-grow: 1;
 
         .r-text {

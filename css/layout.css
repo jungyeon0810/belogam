@@ -180,6 +180,8 @@ p {
 #c02 .left {
   height: 43.75rem;
   background-image: url(/images/img/c02_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   flex-grow: 1;
 }
 #c02 .left .l-text {
@@ -204,6 +206,8 @@ p {
 #c02 .right {
   height: 43.75rem;
   background-image: url(/images/img/c02_02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   flex-grow: 1;
 }
 #c02 .right .r-text {
