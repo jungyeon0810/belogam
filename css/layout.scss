@@ -131,6 +131,7 @@ p {
         justify-content: center;
         &.slide1{
             background-image: url(/images/img/main_visual01.jpg);
+
         }
         &.slide2{
             background-image: url(/images/img/main_visual02.jpg);
@@ -146,7 +147,8 @@ p {
 
     .text {
         flex-direction: column;
-        padding-left: 200px;
+        width: 100%;
+        margin: 0 auto;
 
         .text01 {
             color: var(---, var(--Light-Gray, #F5F5F5));
@@ -174,13 +176,14 @@ p {
     .bulletbtn {
         z-index: 1000;
         position: absolute;
-        top: 50%;
-        left: 0;
+        top: calc(50% + 182px);
+        left: 0px;
         right: 0;
         margin: auto;
 
         .swiperbullet {
             position: unset !important;
+            width: auto;
         }
 
         span {

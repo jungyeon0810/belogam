@@ -112,7 +112,8 @@ p {
 }
 #v_slide .text {
   flex-direction: column;
-  padding-left: 200px;
+  width: 100%;
+  margin: 0 auto;
 }
 #v_slide .text .text01 {
   color: var(---, var(--Light-Gray, #F5F5F5));
@@ -132,13 +133,14 @@ p {
 #v_slide .bulletbtn {
   z-index: 1000;
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: calc(50% + 182px);
+  left: 0px;
   right: 0;
   margin: auto;
 }
 #v_slide .bulletbtn .swiperbullet {
   position: unset !important;
+  width: auto;
 }
 #v_slide .bulletbtn span.swiper-pagination-current {
   color: var(--Light-Gray, #F5F5F5);
