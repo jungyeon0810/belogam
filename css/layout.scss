@@ -494,26 +494,21 @@ p {
                     }
                 }
             }
+        }
 
+
+        .c04-btn{
+            z-index: 1000;
+            top: 50%;
             .c-swiperbtnprev{
-                img{
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                }
-                
-                
+                top: 50%;
             }
             .c-swiperbtnnext{
-                img{
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                }
+                top: 50%;
 
                 
             }
-
+         
             .swiperprograssbar{
                 margin-top: 70px;
                 width: 100%;
@@ -523,13 +518,14 @@ p {
                 .swiper-pagination-progressbar-fill{
                     width: 25%;
                     border-radius: 100px;
-                    background-color: #232326;
+                    background:var(--Raisin-Black, #232326);
                     height: 3px;
-                    align-items: center;
+                    top: -1px;
+
                 }
             }
+        }
 
-        } 
 
 
         .p-content {

@@ -385,29 +385,29 @@ p {
   letter-spacing: -0.03rem;
   text-decoration-line: line-through;
 }
-#c04 .inner .pd .swiper-slide .c-swiperbtnprev img {
-  position: absolute;
+#c04 .inner .pd .c04-btn {
+  z-index: 1000;
   top: 50%;
-  left: 0;
 }
-#c04 .inner .pd .swiper-slide .c-swiperbtnnext img {
-  position: absolute;
+#c04 .inner .pd .c04-btn .c-swiperbtnprev {
   top: 50%;
-  right: 0;
 }
-#c04 .inner .pd .swiper-slide .swiperprograssbar {
+#c04 .inner .pd .c04-btn .c-swiperbtnnext {
+  top: 50%;
+}
+#c04 .inner .pd .c04-btn .swiperprograssbar {
   margin-top: 70px;
   width: 100%;
   height: 0.0625rem;
   background-color: #BEBEBE;
   border-radius: 100px;
 }
-#c04 .inner .pd .swiper-slide .swiperprograssbar .swiper-pagination-progressbar-fill {
+#c04 .inner .pd .c04-btn .swiperprograssbar .swiper-pagination-progressbar-fill {
   width: 25%;
   border-radius: 100px;
-  background-color: #232326;
+  background: var(--Raisin-Black, #232326);
   height: 3px;
-  align-items: center;
+  top: -1px;
 }
 #c04 .inner .pd .p-content {
   gap: 1.3125rem;
