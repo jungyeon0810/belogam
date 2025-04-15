@@ -131,6 +131,7 @@ p {
   padding-left: 2.1875rem;
 }
 #v_slide .bulletbtn {
+  gap: 35px;
   z-index: 1000;
   position: absolute;
   top: calc(50% + 182px);
@@ -141,6 +142,7 @@ p {
 #v_slide .bulletbtn .swiperbullet {
   position: unset !important;
   width: auto;
+  gap: 7px;
 }
 #v_slide .bulletbtn span.swiper-pagination-current {
   color: var(--Light-Gray, #F5F5F5);
@@ -385,15 +387,15 @@ p {
   letter-spacing: -0.03rem;
   text-decoration-line: line-through;
 }
-#c04 .inner .pd .c04-btn {
-  z-index: 1000;
-  top: 50%;
+#c04 .inner .pd .swiper-slide .p-content {
+  gap: 1.3125rem;
 }
-#c04 .inner .pd .c04-btn .c-swiperbtnprev {
-  top: 50%;
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi {
+  flex-direction: column;
+  padding-bottom: 0.3125rem;
 }
-#c04 .inner .pd .c04-btn .c-swiperbtnnext {
-  top: 50%;
+#c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt {
+  flex-direction: column;
 }
 #c04 .inner .pd .c04-btn .swiperprograssbar {
   margin-top: 70px;
@@ -408,16 +410,6 @@ p {
   background: var(--Raisin-Black, #232326);
   height: 3px;
   top: -1px;
-}
-#c04 .inner .pd .p-content {
-  gap: 1.3125rem;
-}
-#c04 .inner .pd .p-content .p01 .pi {
-  flex-direction: column;
-  padding-bottom: 0.3125rem;
-}
-#c04 .inner .pd .p-content .p01 .pi .pt {
-  flex-direction: column;
 }
 
 #c05 .diary {
@@ -437,6 +429,7 @@ p {
 }
 #c05 .diary .dtt button {
   position: absolute;
+  right: 0;
 }
 #c05 .diary .il .i-1 {
   position: relative;

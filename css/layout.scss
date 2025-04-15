@@ -174,6 +174,7 @@ p {
 
 
     .bulletbtn {
+        gap: 35px;
         z-index: 1000;
         position: absolute;
         top: calc(50% + 182px);
@@ -184,6 +185,7 @@ p {
         .swiperbullet {
             position: unset !important;
             width: auto;
+            gap: 7px;
         }
 
         span {
@@ -494,17 +496,30 @@ p {
                     }
                 }
             }
+            .p-content {
+                gap: 1.3125rem;
+    
+                .p01 {
+    
+                    .pi {
+                        flex-direction: column;
+                        padding-bottom: 0.3125rem;
+    
+                        .pt {
+                            flex-direction: column;
+                        }
+                    }
+    
+                }
+    
+            }
         }
-
-
         .c04-btn{
-            z-index: 1000;
-            top: 50%;
+
             .c-swiperbtnprev{
-                top: 50%;
+
             }
             .c-swiperbtnnext{
-                top: 50%;
 
                 
             }
@@ -526,25 +541,6 @@ p {
             }
         }
 
-
-
-        .p-content {
-            gap: 1.3125rem;
-
-            .p01 {
-
-                .pi {
-                    flex-direction: column;
-                    padding-bottom: 0.3125rem;
-
-                    .pt {
-                        flex-direction: column;
-                    }
-                }
-
-            }
-
-        }
     }
 }
 }
@@ -569,6 +565,7 @@ p {
 
             button {
                 position: absolute;
+                right: 0;
             }
         }
 
