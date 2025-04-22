@@ -184,6 +184,7 @@ p {
   background-image: url(/images/img/c02_01.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   flex-grow: 1;
 }
 #c02 .left .l-text {
@@ -210,6 +211,7 @@ p {
   background-image: url(/images/img/c02_02.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   flex-grow: 1;
 }
 #c02 .right .r-text {
