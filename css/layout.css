@@ -400,11 +400,14 @@ p {
   flex-direction: column;
 }
 #c04 .inner .pd .c04-btn {
-  margin: -40px;
+  margin: 0 -40px;
+}
+#c04 .inner .pd .c04-btn .c-swiperbtnprev,
+#c04 .inner .pd .c04-btn .c-swiperbtnnext {
+  position: relative;
 }
 #c04 .inner .pd .c04-btn .swiperprograssbar {
   margin-top: 70px;
-  width: 100%;
   height: 0.0625rem;
   background-color: #BEBEBE;
   border-radius: 100px;
