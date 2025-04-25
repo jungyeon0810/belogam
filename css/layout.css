@@ -399,6 +399,9 @@ p {
 #c04 .inner .pd .swiper-slide .p-content .p01 .pi .pt {
   flex-direction: column;
 }
+#c04 .inner .pd .c04-btn {
+  margin: -40px;
+}
 #c04 .inner .pd .c04-btn .swiperprograssbar {
   margin-top: 70px;
   width: 100%;

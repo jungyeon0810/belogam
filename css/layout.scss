@@ -405,7 +405,6 @@ p {
     background: #FEFAF5;
 
     .inner {
-        
 
         .pd {
             flex-direction: column;
@@ -517,32 +516,23 @@ p {
             }
         }
         .c04-btn{
-
-            .c-swiperbtnprev{
-
-            }
-            .c-swiperbtnnext{
-
-                
-            }
-         
-            .swiperprograssbar{
-                margin-top: 70px;
-                width: 100%;
-                height: 0.0625rem;
-                background-color: #BEBEBE;
+            margin: -40px;
+        .swiperprograssbar{
+            margin-top: 70px;
+            width: 100%;
+            height: 0.0625rem;
+            background-color: #BEBEBE;
+            border-radius: 100px;
+            .swiper-pagination-progressbar-fill{
+                width: 25%;
                 border-radius: 100px;
-                .swiper-pagination-progressbar-fill{
-                    width: 25%;
-                    border-radius: 100px;
-                    background:var(--Raisin-Black, #232326);
-                    height: 3px;
-                    top: -1px;
+                background:var(--Raisin-Black, #232326);
+                height: 3px;
+                top: -1px;
 
-                }
             }
         }
-
+    }
     }
 }
 }
